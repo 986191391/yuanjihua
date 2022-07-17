@@ -7,7 +7,6 @@
 <style lang="scss">
 
 #app {
-  min-width: 900px;
   width: 100vw;
   height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -15,6 +14,18 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+@media screen and (min-width: 600px) {
+  #app {
+    min-width: 900px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #app {
+    min-width: 100%;
+  }
 }
 
 #nav {
