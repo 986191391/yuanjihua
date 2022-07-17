@@ -31,18 +31,19 @@
       <span class="text_4 text_14">about us</span>
       <span class="text_6 text_15">企业文化</span>
     </div>
-    <div class="flex-row group_5">
-      <div class="section_4"><!--*--></div>
-      <div class="section_5"><!--*--></div>
-      <div class="section_4"><!--*--></div>
+    <div class="flex-col enterprise-culture-content">
+      <span class="main">
+        我们致力于将元计划打造为全国首个以人物形象为基石，实现文娱产业全生态布局的IP巨作。我们始终坚信，通过优质的版权与传统实业的联动赋能，是国产数藏最正确的发展路线，所以我们在积极开发线上赋能以及元宇宙空间和游戏的同时，会更加注重元计划对于实体产业的赋能。不久的将来，我们会推出元计划同名小说以及动漫电影，努力成为国产科幻动漫的标杆；同时，元计划主题线下体验馆，元计划高端手办及周边衍生品，元计划冠名综艺及赛事，我们也在积极筹备中。
+      </span>
+      <span class="main_1">希望我们共同努力，让元计划成为中国乃至全球的顶级IP产业，一起建设中国制造的全球共识！</span>
     </div>
     <div class="flex-col section_6">
       <!-- <div class="flex-col section_7"> -->
-        <div class="flex-row section_8">
+        <div class="flex-row contact_way">
           <div class="flex-col section_9">
           </div>
-          <div class="flex-col items-start group_19">
-            <div class="flex-row group_16">
+          <div class="flex-col items-start contactus">
+            <div class="flex-row contactus_title">
               <div class="flex-col items-start group_8">
                 <span class="text_4 text_18">contact us</span>
                 <span class="text_19">联系我们</span>
@@ -52,7 +53,7 @@
                 class="image_7"
               />
             </div>
-            <div class="flex-col group_6">
+            <div class="flex-col contactus_content">
               <div class="flex-row">
                 <div class="flex-col items-center">
                   <img
@@ -282,22 +283,27 @@ export default {
         line-height: 2rem;
       }
     }
-    .group_5 {
-      margin-top: 3.84rem;
-      padding: 0 3.44rem;
-      .section_4 {
-        flex: 1 1 17.69rem;
-        background-color: #e2e2e2;
-        width: 17.69rem;
-        height: 24.88rem;
+
+    .enterprise-culture-content {
+      margin-top: 3.63rem;
+      padding-left: 7.36rem;
+      padding-right: 7.33rem;
+      .main {
+        color: #ffffff;
+        font-size: 0.69rem;
+        font-family: PingFang SC;
+        line-height: 1.5rem;
       }
-      .section_5 {
-        flex: 1 1 17.69rem;
-        background-color: #f1efef;
-        width: 17.69rem;
-        height: 24.88rem;
+      .main_1 {
+        margin-top: 1.5rem;
+        align-self: center;
+        color: #ffffff;
+        font-size: 0.69rem;
+        font-family: PingFang SC;
+        line-height: 1.5rem;
       }
     }
+
     .section_6 {
       margin-top: 10.19rem;
       background-image: url('../../assets/about/footerBg.png');
@@ -307,7 +313,8 @@ export default {
       padding-bottom: 0;
       background-color: #00000040;
 
-        .section_8 {
+        .contact_way {
+          width: 80%;
           margin: 0 auto;
           background-color: #000000;
           background-image: url('../../assets/about/footeryuan.png');
@@ -346,13 +353,12 @@ export default {
             }
           }
 
-          .group_19 {
+          .contactus {
             padding: 1.27rem 0 1.17rem;
             flex: 1 1 auto;
-            max-width: 25.93rem;
             height: 17rem;
 
-            .group_6 {
+            .contactus_content {
               padding: 0 2.03rem;
               width: 100%;
 
@@ -431,7 +437,7 @@ export default {
               }
             }
 
-            .group_16 {
+            .contactus_title {
               width: 100%;
               padding: 0 2.03rem;
               position: relative;
