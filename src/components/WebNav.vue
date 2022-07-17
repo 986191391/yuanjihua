@@ -4,7 +4,7 @@
       src="../assets/logo.png"
       class="image"
     />
-    <div class="flex-row group">x
+    <div class="flex-row group">
       <router-link
         v-for="(item, index) in routeInfo"
         :key="index"
