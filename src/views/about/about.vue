@@ -1,9 +1,7 @@
 <template>
   <div class="flex-col page">
     <div class="flex-col section_1">
-      <div class="flex-col section_2">
-        <WebNav />
-      </div>
+      <WebNav />
     </div>
     <div class="flex-col view">
       <div class="flex-col">
@@ -39,11 +37,21 @@
       <div class="section_4"><!--*--></div>
     </div>
     <div class="flex-col section_6">
-      <div class="flex-col section_7">
+      <!-- <div class="flex-col section_7"> -->
         <div class="flex-row section_8">
           <div class="flex-col section_9">
           </div>
           <div class="flex-col items-start group_19">
+            <div class="flex-row group_16">
+              <div class="flex-col items-start group_8">
+                <span class="text_4 text_18">contact us</span>
+                <span class="text_19">联系我们</span>
+              </div>
+              <img
+                src="../../assets/about/yuanLabelIcon.png"
+                class="image_7"
+              />
+            </div>
             <div class="flex-col group_6">
               <div class="flex-row">
                 <div class="flex-col items-center">
@@ -80,19 +88,9 @@
                 <span class="text_25">中国广东省深圳市南山区粤海街道高新南七道南面国信投资大厦603-1</span>
               </div>
             </div>
-            <div class="flex-row group_16">
-              <div class="flex-col items-start group_8">
-                <span class="text_4 text_18">contact us</span>
-                <span class="text_19">联系我们</span>
-              </div>
-              <img
-                src="../../assets/about/yuanLabelIcon.png"
-                class="image_7"
-              />
-            </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
     <WebFooter />
   </div>
@@ -117,22 +115,23 @@ export default {
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+
     .section_1 {
-      background-image: url('../../assets/about/banner.png');
+      background-image: url('../../assets/about/aboutbanner@2x.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      .section_2 {
-        padding-bottom: 30.31rem;
-        background-color: #00000059;
-        box-shadow: 0px 0.063rem 0.31rem #001a781a;
+      padding-bottom: 30.31rem;
+
         .section_3 {
           padding: 0 5rem;
           background-image: linear-gradient(180deg, #00000080 25.5%, #00000000 100%);
+
           .image {
             align-self: center;
             width: 6.28rem;
             height: 2.19rem;
           }
+
           .text_1 {
             align-self: center;
             color: #ffffff;
@@ -146,6 +145,7 @@ export default {
             padding: 1.31rem 0;
             flex-shrink: 0;
             position: relative;
+
             .image_1 {
               width: 2.09rem;
               height: 1.03rem;
@@ -154,6 +154,7 @@ export default {
               left: 50%;
               transform: translateX(-50%);
             }
+
             .text_31 {
               color: #ffffff;
               font-size: 0.88rem;
@@ -162,6 +163,7 @@ export default {
               position: relative;
             }
           }
+
           .text_2 {
             margin-left: 2.69rem;
             align-self: center;
@@ -171,6 +173,7 @@ export default {
             font-weight: 200;
             line-height: 0.8rem;
           }
+
           .text_3 {
             margin-left: 2.81rem;
             align-self: center;
@@ -181,8 +184,8 @@ export default {
             line-height: 0.8rem;
           }
         }
-      }
     }
+
     .view {
       margin-top: -18.58rem;
       padding-bottom: 29.42rem;
@@ -300,25 +303,30 @@ export default {
       background-image: url('../../assets/about/footerBg.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      .section_7 {
-        padding: 2.06rem 3.47rem 0.83rem;
-        padding-bottom: 0;
-        background-color: #00000040;
+      padding: 2.06rem 0 0.83rem;
+      padding-bottom: 0;
+      background-color: #00000040;
+
         .section_8 {
+          margin: 0 auto;
           background-color: #000000;
           background-image: url('../../assets/about/footeryuan.png');
           background-size: 100% 100%;
           background-repeat: no-repeat;
+          justify-content: center;
+
           .section_9 {
-            flex: 1 1 auto;
+            width: 26.93rem;
             background-image: url('../../assets/about/address.png');
             background-size: 100% 100%;
             background-repeat: no-repeat;
             height: 17rem;
+
             .section_10 {
               padding: 7.04rem 0;
               background-color: #0000004d;
               height: 100%;
+
               .section_11 {
                 padding: 0.5rem 0.8rem 1rem 0.8rem;
                 filter: drop-shadow(0px 0.19rem 0.094rem #00215240);
@@ -326,6 +334,7 @@ export default {
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
                 width: 14.91rem;
+
                 .text_16 {
                   color: #3478f6;
                   font-size: 0.63rem;
@@ -333,29 +342,23 @@ export default {
                   font-weight: 600;
                   text-align: left;
                 }
-                // .text_17 {
-                //   margin-top: 0.13rem;
-                //   color: #3478f6;
-                //   font-size: 0.63rem;
-                //   font-family: PingFang SC;
-                //   font-weight: 600;
-                //   line-height: 0.75rem;
-                //   letter-spacing: 0.063rem;
-                // }
               }
             }
           }
+
           .group_19 {
             padding: 1.27rem 0 1.17rem;
-            // width: 45%;
-            width: 25.13rem;
+            flex: 1 1 auto;
+            max-width: 25.93rem;
             height: 17rem;
+
             .group_6 {
-              margin-left: 2.03rem;
-              margin-top: 2.2rem;
-              width: 18.19rem;
+              padding: 0 2.03rem;
+              width: 100%;
+
               .group_12 {
                 margin-top: 1.53rem;
+
                 .text_23 {
                   margin-top: 0.48rem;
                   align-self: flex-start;
@@ -365,8 +368,10 @@ export default {
                   line-height: 0.58rem;
                   letter-spacing: 0.063rem;
                 }
+
                 .group_14 {
                   margin-top: 1.16rem;
+
                   .text_24 {
                     color: #ffffff;
                     font-size: 0.64rem;
@@ -375,6 +380,7 @@ export default {
                     letter-spacing: 0.08rem;
                   }
                 }
+
                 .text_25 {
                   margin-top: 0.39rem;
                   color: #ffffff;
@@ -384,6 +390,7 @@ export default {
                   letter-spacing: 0.063rem;
                   text-align: left;
                 }
+
                 .text_22 {
                   color: #ffffff;
                   font-size: 0.64rem;
@@ -391,15 +398,18 @@ export default {
                   font-weight: 600;
                   letter-spacing: 0.08rem;
                 }
+
                 .image_4 {
                   width: 0.94rem;
                   height: 0.94rem;
                   margin-right: 0.5rem;
                 }
               }
+
               .group_13 {
                 margin-left: 2.8rem;
                 align-items: center;
+
                 .text_21 {
                   margin-top: 0.3rem;
                   color: #ffffff;
@@ -407,25 +417,32 @@ export default {
                   font-family: PingFang SC;
                 }
               }
+
               .text_20 {
                 margin-top: 0.31rem;
                 color: #ffffff;
                 font-size: 0.63rem;
                 font-family: PingFang SC;
               }
+
               .image_2 {
                 width: 3.86rem;
                 height: 3.83rem;
               }
             }
+
             .group_16 {
-              margin-top: -14.56rem;
-              padding-left: 2.03rem;
+              width: 100%;
+              padding: 0 2.03rem;
               position: relative;
+              display: flex;
+              justify-content: space-between;
+
               .group_8 {
                 padding-top: 0.83rem;
                 width: 15.19rem;
                 position: relative;
+
                 .text_18 {
                   margin-left: 0.19rem;
                   color: #ffffff1a;
@@ -435,6 +452,7 @@ export default {
                   line-height: 0.7rem;
                   letter-spacing: 0.75rem;
                 }
+
                 .text_19 {
                   color: #ffffff;
                   font-size: 1.19rem;
@@ -463,14 +481,15 @@ export default {
           line-height: 0.41rem;
           letter-spacing: 0.044rem;
         }
-      }
     }
+
     .text_6 {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
     }
+
     .text_4 {
       text-transform: uppercase;
     }
