@@ -74,7 +74,6 @@ export default {
   watch: {
     $route: {
       handler: function (to, from) {
-        console.log('tototo', to)
         this.active = this.navRelate[to.name]
       },
       deep: true,
