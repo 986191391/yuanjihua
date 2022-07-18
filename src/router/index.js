@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Shouye from '../views/shouye/shouye.vue'
+import HomeIndex from '../views/homeIndex/homeIndex.vue'
 import About from '../views/about/about.vue'
 
 Vue.use(VueRouter)
@@ -8,8 +8,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'shouye',
-    component: Shouye
+    name: 'homeIndex',
+    component: HomeIndex
   },
   {
     path: '/about',

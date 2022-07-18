@@ -1,6 +1,6 @@
 <template>
   <div class="flex-col web-about-page">
-    <div class="flex-col section_1">
+    <div class="flex-col about-banner">
       <YuanNav />
     </div>
     <div class="flex-col view">
@@ -37,63 +37,61 @@
       </span>
       <span class="main_1">希望我们共同努力，让元计划成为中国乃至全球的顶级IP产业，一起建设中国制造的全球共识！</span>
     </div>
-    <div class="flex-col section_6">
-      <!-- <div class="flex-col section_7"> -->
-        <div class="flex-row contact_way">
-          <div class="flex-col section_9">
-          </div>
-          <div class="flex-col items-start contactus">
-            <div class="flex-row contactus_title">
-              <div class="flex-col items-start group_8">
-                <span class="text_4 text_18">contact us</span>
-                <span class="text_19">联系我们</span>
-              </div>
-              <img
-                src="../../assets/about/yuanLabelIcon.png"
-                class="image_7"
-              />
+    <div class="flex-col footer-address">
+      <div class="flex-row contact_way">
+        <div class="flex-col section_9">
+        </div>
+        <div class="flex-col items-start contactus">
+          <div class="flex-row contactus_title">
+            <div class="flex-col items-start group_8">
+              <span class="text_4 text_18">contact us</span>
+              <span class="text_19">联系我们</span>
             </div>
-            <div class="flex-col contactus_content">
+            <img
+              src="../../assets/about/yuanLabelIcon.png"
+              class="image_7"
+            />
+          </div>
+          <div class="flex-col contactus_content">
+            <div class="flex-row">
+              <div class="flex-col items-center">
+                <img
+                  src="../../assets/about/yuanAccount.png"
+                  class="image_2"
+                />
+                <span class="text_20">元计划公众号</span>
+              </div>
+              <div class="flex-col items-start group_13">
+                <img
+                  src="../../assets/about/wechatScan.png"
+                  class="image_2"
+                />
+                <span class="text_21">客服微信</span>
+              </div>
+            </div>
+            <div class="flex-col group_12">
               <div class="flex-row">
-                <div class="flex-col items-center">
-                  <img
-                    src="../../assets/about/yuanAccount.png"
-                    class="image_2"
-                  />
-                  <span class="text_20">元计划公众号</span>
-                </div>
-                <div class="flex-col items-start group_13">
-                  <img
-                    src="../../assets/about/wechatScan.png"
-                    class="image_2"
-                  />
-                  <span class="text_21">客服微信</span>
-                </div>
+                <img
+                  src="../../assets/about/emailIcon.png"
+                  class="image_4"
+                />
+                <span class="text_22">合作邮箱</span>
               </div>
-              <div class="flex-col group_12">
-                <div class="flex-row">
-                  <img
-                    src="../../assets/about/emailIcon.png"
-                    class="image_4"
-                  />
-                  <span class="text_22">合作邮箱</span>
-                </div>
-                <span class="text_23">caijingya@xingzhe.team</span>
-                <div class="flex-row group_14">
-                  <img
-                    src="../../assets/about/addressIcon.png"
-                    class="image_4"
-                  />
-                  <span class="text_24">公司地址</span>
-                </div>
-                <span class="text_25">中国广东省深圳市南山区粤海街道高新南七道南面国信投资大厦603-1</span>
+              <span class="text_23">caijingya@xingzhe.team</span>
+              <div class="flex-row group_14">
+                <img
+                  src="../../assets/about/addressIcon.png"
+                  class="image_4"
+                />
+                <span class="text_24">公司地址</span>
               </div>
+              <span class="text_25">中国广东省深圳市南山区粤海街道高新南七道南面国信投资大厦603-1</span>
             </div>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
+      <YuanFooter />
     </div>
-    <YuanFooter />
   </div>
 </template>
 
@@ -117,76 +115,11 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
 
-  .section_1 {
+  .about-banner {
+    height: 33.4rem;
     background-image: url('../../assets/about/aboutbanner@2x.png');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    padding-bottom: 30.31rem;
-
-      .section_3 {
-        padding: 0 5rem;
-        background-image: linear-gradient(180deg, #00000080 25.5%, #00000000 100%);
-
-        .image {
-          align-self: center;
-          width: 6.28rem;
-          height: 2.19rem;
-        }
-
-        .text_1 {
-          align-self: center;
-          color: #ffffff;
-          font-size: 0.88rem;
-          font-family: PingFang SC;
-          font-weight: 200;
-          line-height: 0.8rem;
-        }
-        .group_1 {
-          margin-left: 2.77rem;
-          padding: 1.31rem 0;
-          flex-shrink: 0;
-          position: relative;
-
-          .image_1 {
-            width: 2.09rem;
-            height: 1.03rem;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-          }
-
-          .text_31 {
-            color: #ffffff;
-            font-size: 0.88rem;
-            font-family: PingFang SC;
-            line-height: 0.81rem;
-            position: relative;
-          }
-        }
-
-        .text_2 {
-          margin-left: 2.69rem;
-          align-self: center;
-          color: #ffffff;
-          font-size: 0.88rem;
-          font-family: PingFang SC;
-          font-weight: 200;
-          line-height: 0.8rem;
-        }
-
-        .text_3 {
-          margin-left: 2.81rem;
-          align-self: center;
-          color: #ffffff;
-          font-size: 0.88rem;
-          font-family: PingFang SC;
-          font-weight: 200;
-          line-height: 0.8rem;
-        }
-      }
   }
 
   .view {
@@ -306,13 +239,13 @@ export default {
     }
   }
 
-  .section_6 {
+  .footer-address {
     margin-top: 10.19rem;
     background-image: url('../../assets/about/footerBg.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background-size: 100% 100%;
     // background-repeat: no-repeat;
-    // background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 2.06rem 0 0.83rem;
     padding-bottom: 0;
     background-color: #00000040;
@@ -496,6 +429,10 @@ export default {
         font-family: PingFang SC;
         line-height: 0.41rem;
         letter-spacing: 0.044rem;
+      }
+
+      .yuanjihua-footer {
+        padding: 0.6rem 0;
       }
   }
 

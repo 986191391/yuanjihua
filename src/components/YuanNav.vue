@@ -9,16 +9,16 @@
         <router-link
           v-for="(item, index) in routeInfo"
           :key="index"
-          :class="`nav-item ${active === item.active && 'nav-active'}`" :to="item.path"
+          :class="`nav-item ${active === item.active ? 'nav-active' : ` ${active} ${item.active}`}`" :to="item.path"
         >
           <span class="text">{{ item.title }}</span>
         </router-link>
       </div>
     </div>
     <div class="pc-nav">
-      <i class="nav-icon el-icon-back" />
+      <i class="nav-icon el-icon-back" @click="() => {this.$router.go(-1)}" />
       <span class="nav-title">{{navTitle}}</span>
-      <i class="nav-icon el-icon-s-unfold" @click="() => {this.isNavModalShow = true}"/>
+      <i class="nav-icon el-icon-s-unfold" @click="() => {this.isNavModalShow = !this.isNavModalShow}"/>
       <div v-if="isNavModalShow" class="nav-list-modal" @click="onPcNavClick">
         <router-link class="nav-list-item" to="/">首页</router-link>
         <router-link class="nav-list-item" to="/about">关于我们</router-link>
@@ -59,7 +59,7 @@ export default {
         }
       ],
       navRelate: {
-        shouye: 0,
+        homeIndex: 0,
         about: 1,
         plan: 2
       },
@@ -74,6 +74,7 @@ export default {
   watch: {
     $route: {
       handler: function (to, from) {
+        console.log('tototo', to)
         this.active = this.navRelate[to.name]
       },
       deep: true,
@@ -84,6 +85,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  .yuanjihua-nav {
+    height: 44px;
+  }
+
   .web-nav {
     padding: 0 5rem;
     height: 50px;
@@ -144,6 +149,9 @@ export default {
     align-items: center;
     background-color: #fff;
     position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     .nav-icon {
       width: 44px;
@@ -173,6 +181,7 @@ export default {
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        color: #000;
 
         &:not(:last-child) {
           border-bottom: 1px solid #eee;
