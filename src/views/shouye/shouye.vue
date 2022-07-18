@@ -176,7 +176,9 @@ export default {
         background-image: url('../../assets/banner@2x.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        padding-bottom: 12.5rem;
+        background-size: cover;
+        background-position: center center;
+        min-height: 33.3rem;
 
         .group_3 {
           margin-top: 9.06rem;
@@ -245,9 +247,11 @@ export default {
           padding: 2.61rem 1.66rem 2.94rem;
           margin-top: 0;
           background-image: url('../../assets/session3@2x.png');
-          background-size: 100% 100%;
+          // background-size: 100% 100%;
           background-repeat: no-repeat;
-          background-position: 70% 50%;
+          background-size: cover;
+          // background-position: 70% 50%;
+          background-position: center center;
           transition: all 0.5s;
           z-index: 3;
           text-align: left;
@@ -257,7 +261,7 @@ export default {
             height: 30.81rem;
             margin-top: -15.5rem;
             background-size: 246% 100%;
-            background-position: 69% 100%;
+            background-position: 70% 100%;
             cursor: default;
           }
 
@@ -362,8 +366,10 @@ export default {
           background-color: #000d22;
           position: relative;
           background-image: url('../../assets/session1@2x.png');
-          background-size: 100% 100%;
+          // background-size: 100% 100%;
           background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
           position: relative;
           padding: 2.56rem 1.68rem 2.96rem;
           transition: all 0.5s;
@@ -416,8 +422,10 @@ export default {
           background-color: #072e33;
           position: relative;
           background-image: url('../../assets/session2@2x.png');
-          background-size: 100% 100%;
+          // background-size: 100% 100%;
           background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
           padding: 2.56rem 1.68rem;
           transition: all 0.5s;
           z-index: 3;

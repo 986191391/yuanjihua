@@ -121,6 +121,8 @@ export default {
     background-image: url('../../assets/about/aboutbanner@2x.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     padding-bottom: 30.31rem;
 
       .section_3 {
@@ -309,6 +311,8 @@ export default {
     background-image: url('../../assets/about/footerBg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     padding: 2.06rem 0 0.83rem;
     padding-bottom: 0;
     background-color: #00000040;
@@ -320,6 +324,8 @@ export default {
         background-image: url('../../assets/about/footeryuan.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        // background-repeat: no-repeat;
+        // background-size: cover;
         justify-content: center;
 
         .section_9 {
@@ -327,6 +333,8 @@ export default {
           background-image: url('../../assets/about/address.png');
           background-size: 100% 100%;
           background-repeat: no-repeat;
+          // background-repeat: no-repeat;
+          // background-size: cover;
           height: 17rem;
 
           .section_10 {
@@ -340,6 +348,8 @@ export default {
               background-image: url('../../assets/about/dialog.png');
               background-size: 100% 100%;
               background-repeat: no-repeat;
+              // background-repeat: no-repeat;
+              // background-size: cover;
               width: 14.91rem;
 
               .text_16 {
