@@ -1,8 +1,13 @@
 <template>
   <transition name="fade">
-    <div @touchend='end' @touchstart='start' @touchmove='move' class="swiper">
-      <div @click="chooseItem(item)" v-for="(item, index) in imgs" :style="{ ...config5[index], width: '270px', height: '420px', opacity: 1, transition: '.4s' }" :key="item.id">
-        <img :src="item.cover" style="width: 100%; height: 100%;">
+    <div @touchend="end" @touchstart="start" @touchmove="move" class="swiper">
+      <div
+        v-for="(item, index) in imgs"
+        :key="item.id"
+        :style="{ ...config5[index], width: '270px', height: '420px', opacity: 1, transition: '.4s' }"
+        @click="chooseItem(item)"
+      >
+        <img :src="item.cover" style="width: 100%; height: 100%;" />
       </div>
     </div>
   </transition>
@@ -55,13 +60,13 @@ export default {
           position: 'absolute',
           top: '0px',
           left: ((screen.width - 270) / 2) + 'px',
-          zIndex: 1
+          zIndex: 4
         },
         {
           position: 'absolute',
           top: '0px',
           left: ((screen.width) - 270 / 6) + 'px',
-          zIndex: 1
+          zIndex: 3
         },
         {
           position: 'absolute',
@@ -73,7 +78,7 @@ export default {
           position: 'absolute',
           top: '0px',
           left: -(270 / 6 * 5) + 'px',
-          zIndex: 1
+          zIndex: 2
         }
       ]
     }
@@ -89,8 +94,8 @@ export default {
     },
     // 开始移动端滑动屏幕
     start (event) {
-      // this.startX = event.changedTouches[0].clientX
-      // this.startY = event.changedTouches[0].clientY
+      this.startX = event.changedTouches[0].clientX
+      this.startY = event.changedTouches[0].clientY
     },
     // 连续滑动
     move (event) {
@@ -113,6 +118,19 @@ export default {
       // 如果是滑动，放开（236行到238行）的注解。如果是连续滑动，注解（236行到238行）
       // this.endY = event.changedTouches[0].clientY;
       // this.endX = event.changedTouches[0].clientX;
+      this.endY = event.changedTouches[0].clientY
+      this.endX = event.changedTouches[0].clientX
+      this.stopDefault(event)
+      // 如果是滑动，注解（223行到231行）这段。如果是连续滑动，放开（223行到231行）注解
+      this.interval = this.endX - this.startX
+      if (this.interval > 40) {
+        this.startX = this.endX
+        this.prev()
+      }
+      if (this.interval < -40) {
+        this.startX = this.endX
+        this.next()
+      }
     },
     // 阻止touchmove的横向默认事件（ios快捷操作会关闭页面）
     stopDefault (event) {
