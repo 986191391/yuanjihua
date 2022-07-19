@@ -68,13 +68,13 @@ export default {
   },
   methods: {
     onPcNavClick () {
-      this.isNavModalShow = false
     }
   },
   watch: {
     $route: {
       handler: function (to, from) {
         this.active = this.navRelate[to.name]
+        this.isNavModalShow = false
       },
       deep: true,
       immediate: true
@@ -86,6 +86,7 @@ export default {
 <style scoped lang="scss">
   .yuanjihua-nav {
     height: 44px;
+    z-index: 9999;
   }
 
   .web-nav {
@@ -172,6 +173,7 @@ export default {
       right: 0;
       top: 44px;
       background-color: #fff;
+      z-index: 99;
 
       .nav-list-item {
         width: 100%;

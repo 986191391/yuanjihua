@@ -115,18 +115,17 @@ height: 100%;
         text-align: center;
 
         .group_1 {
-        padding-top: 1rem;
-        height: 2.31rem;
-        position: relative;
-
+            padding-top: 1rem;
+            height: 2.31rem;
+            position: relative;
         }
         .text_4 {
-        margin-top: 0.66rem;
-        color: #ffffff;
-        font-size: 1rem;
-        font-family: PingFang SC;
-        line-height: 0.94rem;
-        letter-spacing: 0.3rem;
+            margin-top: 0.66rem;
+            color: #ffffff;
+            font-size: 1rem;
+            font-family: PingFang SC;
+            line-height: 0.94rem;
+            letter-spacing: 0.3rem;
         }
     }
     .text_6 {
