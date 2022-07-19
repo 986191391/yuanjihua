@@ -15,7 +15,10 @@
   text-align: center;
   color: #2c3e50;
 }
-
+::-webkit-scrollbar {
+  /*隐藏滚轮*/
+  display: none;
+}
 @media screen and (min-width: 600px) {
   #app {
     min-width: 900px;

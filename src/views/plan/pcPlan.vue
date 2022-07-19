@@ -64,7 +64,7 @@ export default {
 .pc-plan-page{
   .plan-content{
     background-image: url('../../assets/plan/pcbg.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     min-height: 100vh;
 
