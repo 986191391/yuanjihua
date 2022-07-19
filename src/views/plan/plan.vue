@@ -9,22 +9,36 @@
         </div>
         <span class="plan-slogin">一起建设中国制造的全球共识</span>
       </div>
-      <div class="process-list">
-        <div v-for="(item, index) in processList" :key="index"  class="process-line">
-          <template v-if="index % 2 === 0">
-            <div class="line-left">
-              <span :style="{ marginRight: 10 }">{{item}}</span><HalfCircle direction="left" />
+    </div>
+    <div class="process-list">
+      <div class="connect-line"></div>
+      <div v-for="(item, index) in processList" :key="index"  class="process-line">
+        <template v-if="index % 2 === 0">
+          <div class="line-left">
+            <span class="left-label">{{item}}</span><HalfCircle direction="left" />
+          </div>
+          <div></div>
+        </template>
+        <template v-else-if="index % 2 === 1 && (typeof item !== 'object')">
+          <div></div>
+          <div class="line-right">
+            <HalfCircle direction="right" /><span class="right-label">{{item}}</span>
+          </div>
+        </template>
+        <template v-else>
+          <div></div>
+          <div class="line-right">
+            <HalfCircle direction="right" />
+            <div class="line-item-arr">
+              <span v-for="(itm, indx) in item" :key="`ceil${indx}`" class="right-label">{{itm}}</span>
             </div>
-            <div></div>
-          </template>
-          <template v-else>
-            <div></div>
-            <div class="line-right"><HalfCircle direction="right" /><span :style="{ marginLeft: 10 }">{{item}}</span></div>
-          </template>
-        </div>
+          </div>
+        </template>
       </div>
     </div>
-    <YuanFooter />
+    <div class="footer-bg">
+      <YuanFooter />
+    </div>
   </div>
 </template>
 
@@ -45,7 +59,7 @@ export default {
         '元计划南北冲突第战役打响',
         '启动元计划空投计划',
         '开启元计划形象周期性选拔参与实体赋能',
-        '上线天猫，抖音等线上品牌店 推出首款元计划手办并持续发布线下自研周边产品',
+        ['上线天猫，抖音等线上品牌店', '推出首款元计划手办并持续发布线下自研周边产品'],
         '宣布项目经济模型重要信息',
         '邀请签约娱乐文化体育等产业高端流量明星加入元计划',
         '与一线国产服装品牌合作联名发布元计划潮牌服饰',
@@ -79,7 +93,7 @@ export default {
     background-position: center center;
 
     .slogin {
-      padding: 15.44rem 0 25.28rem;
+      padding: 12rem 0 25.28rem;
 
       .plan-label {
         padding-top: 1.09rem;
@@ -119,35 +133,75 @@ export default {
         letter-spacing: 0.82rem;
       }
     }
-    .process-list {
-      width: 100%;
-      color: #fff;
-      font-size: 14px;
-      margin-top: -20rem;
+  }
 
-      .process-line {
-        padding: 15px 0;
+  .process-list {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    margin-top: -18rem;
+    z-index: 1;
+    position: relative;
+
+    .connect-line {
+      position: absolute;
+      width: 1px;
+      height: calc(100% - 40px);
+      background-color: #fff;
+      top: 20px;
+      left: calc(50% - 1px);
+    }
+
+    .process-line {
+      padding: 15px 0;
+      display: flex;
+
+      & > div {
+        width: 50%;
+      }
+
+      .line-left {
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transform: translateX(4px);
 
-        & > div {
-          width: 50%;
+        .left-label {
+          margin-right: 15px;
+        }
+      }
+
+      .line-right {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translateX(-5px);
+
+        .right-label {
+          margin-left: 15px;
         }
 
-        .line-left {
+        .line-item-arr {
+          transform: translateY(10px);
           display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          margin-right: -10px;
-        }
+          flex-direction: column;
+          text-align: left;
 
-        .line-right {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          margin-left: -10px;
+          & > span:last-child {
+            margin-top: 10px;
+          }
         }
       }
     }
+  }
+
+  .footer-bg {
+    margin-top: -25rem;
+    padding: 37.28rem 0 1rem;
+    background-image: url('../../assets/plan/footerbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
