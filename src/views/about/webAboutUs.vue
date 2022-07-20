@@ -1,7 +1,7 @@
 <template>
   <div class="flex-col web-about-page">
     <div class="flex-col about-banner">
-      <YuanNav />
+      <!-- <YuanNav /> -->
     </div>
     <div class="flex-col view">
       <div class="flex-col">
@@ -96,11 +96,11 @@
 </template>
 
 <script>
-import YuanNav from '../../components/YuanNav.vue'
+// import YuanNav from '../../components/YuanNav.vue'
 import YuanFooter from '../../components/YuanFooter.vue'
 
 export default {
-  components: { YuanNav, YuanFooter },
+  components: { YuanFooter },
   data () {
     return {}
   }
@@ -242,8 +242,6 @@ export default {
   .footer-address {
     margin-top: 10.19rem;
     background-image: url('../../assets/about/footerBg.png');
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2.06rem 0 0.83rem;
@@ -253,12 +251,6 @@ export default {
       .contact_way {
         width: 80%;
         margin: 0 auto;
-        background-color: #000000;
-        background-image: url('../../assets/about/footeryuan.png');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        // background-repeat: no-repeat;
-        // background-size: cover;
         justify-content: center;
 
         .section_9 {
@@ -266,8 +258,6 @@ export default {
           background-image: url('../../assets/about/address.png');
           background-size: 100% 100%;
           background-repeat: no-repeat;
-          // background-repeat: no-repeat;
-          // background-size: cover;
           height: 17rem;
 
           .section_10 {
@@ -300,6 +290,11 @@ export default {
           padding: 1.27rem 0 1.17rem;
           flex: 1 1 auto;
           height: 17rem;
+          background-color: #000000;
+          background-image: url('../../assets/about/footeryuan.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: right bottom ;
 
           .contactus_content {
             padding: 0 2.03rem;

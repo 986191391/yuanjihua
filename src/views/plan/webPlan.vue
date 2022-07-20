@@ -1,7 +1,7 @@
 <template>
   <div class="flex-col web-plan-page">
     <div class="flex-col plan-banner">
-      <YuanNav />
+      <!-- <YuanNav /> -->
       <div class="flex-col slogin">
         <div class="flex-col items-center plan-label">
           <span class="text_4">roadmap</span>
@@ -43,12 +43,12 @@
 </template>
 
 <script>
-import YuanNav from '../../components/YuanNav.vue'
+// import YuanNav from '../../components/YuanNav.vue'
 import YuanFooter from '../../components/YuanFooter.vue'
 import HalfCircle from './halfCircle.vue'
 
 export default {
-  components: { YuanNav, YuanFooter, HalfCircle },
+  components: { YuanFooter, HalfCircle },
   data () {
     return {
       processList: [

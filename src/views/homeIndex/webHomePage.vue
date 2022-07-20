@@ -1,7 +1,7 @@
 <template>
   <div class="web-container">
     <div class="flex-col banner">
-      <YuanNav />
+      <!-- <YuanNav /> -->
       <div class="flex-col items-center group_3">
         <img
           src="../../assets/logo.png"
@@ -39,13 +39,13 @@
             </div>
             <div class="flex-col items-center scan_code_wrapper">
               <img
-                src="https://project-user-resource-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62cebae603330d00110d3d2c/16580460030079475322.png"
+                src="../../assets/scan.png"
                 class="scan_image"
               />
               <span class="scan_code_title">元计划公众号</span>
             </div>
           </div>
-          <div :class="`section-more-icon  ${sectionActive === 1 && 'section_hidden'}`" />
+          <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 1 && 'section_hidden'}`" />
         </div>
         <div :class="`flex-col equal-division-item_1 ${sectionActive === 2 && 'active'}`" @click="(e) => setSectionActive(e, 2)">
           <div class="flex-col items-center text-wrapper_1"><span class="text_7">第二章 · 起缘</span></div>
@@ -74,13 +74,13 @@
             </div>
             <div class="flex-col items-center scan_code_wrapper">
               <img
-                src="https://project-user-resource-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62cebae603330d00110d3d2c/16580460030079475322.png"
+                src="../../assets/scan.png"
                 class="scan_image"
               />
               <span class="scan_code_title">元计划公众号</span>
             </div>
           </div>
-          <div :class="`section-more-icon  ${sectionActive === 2 && 'section_hidden'}`" />
+          <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 2 && 'section_hidden'}`" />
         </div>
       </div>
       <div :class="`flex-col section_9 ${sectionActive === 3 && 'active'}`" @click="(e) => setSectionActive(e, 3)">
@@ -116,13 +116,13 @@
           </div>
           <div class="flex-col items-center scan_code_wrapper">
             <img
-              src="https://project-user-resource-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62cebae603330d00110d3d2c/16580460030079475322.png"
+              src="../../assets/scan.png"
               class="scan_image"
             />
             <span class="scan_code_title">元计划公众号</span>
           </div>
         </div>
-        <div :class="`section-more-icon  ${sectionActive === 3 && 'section_hidden'}`">→</div>
+        <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 3 && 'section_hidden'}`" />
       </div>
     </div>
     <YuanFooter />
@@ -130,11 +130,11 @@
 </template>
 
 <script>
-import YuanNav from '../../components/YuanNav.vue'
+// import YuanNav from '../../components/YuanNav.vue'
 import YuanFooter from '../../components/YuanFooter.vue'
 
 export default {
-  components: { YuanNav, YuanFooter },
+  components: { YuanFooter },
   data () {
     return {
       sectionActive: false,
@@ -299,12 +299,16 @@ export default {
           overflow: scroll;
 
           & > span {
-              text-indent:24px;
-              color: #ffffff;
-              font-size: 0.63rem;
-              font-family: PingFang SC;
-              line-height: 1.38rem;
-              text-align: justify;
+            text-indent:24px;
+            color: #ffffff;
+            font-size: 0.63rem;
+            font-family: PingFang SC;
+            line-height: 1.38rem;
+            text-align: justify;
+
+            &:not(:first-child) {
+              margin-top: 8px;
+            }
           }
         }
 
@@ -459,14 +463,14 @@ export default {
     }
 
     .section-more-icon {
-    margin-top: 1.83rem;
-    background-color: #ffffff;
-    width: 1.91rem;
-    height: 0.36rem;
+      margin-top: 1.83rem;
+      // background-color: #ffffff;
+      width: 1.91rem;
+      height: 0.36rem;
 
-    &.section_hidden {
+      &.section_hidden {
         display: none;
-    }
+      }
     }
 }
 </style>
