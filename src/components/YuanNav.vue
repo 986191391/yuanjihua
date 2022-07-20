@@ -9,7 +9,7 @@
         <router-link
           v-for="(item, index) in routeInfo"
           :key="index"
-          :class="`nav-item ${active === item.active ? 'nav-active' : ` ${active} ${item.active}`}`" :to="item.path"
+          :class="`nav-item ${active === item.active && 'nav-active'}`" :to="item.path"
         >
           <span class="text">{{ item.title }}</span>
         </router-link>
@@ -85,13 +85,12 @@ export default {
 
 <style scoped lang="scss">
   .yuanjihua-nav {
-    height: 44px;
     z-index: 9999;
   }
 
   .web-nav {
     padding: 0 5rem;
-    height: 50px;
+    height: 60px;
     background-image: linear-gradient(180deg, #00000080 25.5%, #00000000 100%);
 
     .nav_active_image {
@@ -114,9 +113,10 @@ export default {
 
         &.nav-active {
           background-image: url('../assets/highlight.png');
-          background-size: 25px 15px;
+          background-size: 30px 15px;
           background-position: 50% 0;
           background-repeat: no-repeat;
+          font-weight: bold;
         }
 
         .high-light-img {
@@ -132,7 +132,7 @@ export default {
       .text {
         align-self: center;
         color: #ffffff;
-        font-size: 0.81rem;
+        font-size: 22px;
         font-family: PingFang SC;
         font-weight: 200;
         line-height: 0.75rem;
