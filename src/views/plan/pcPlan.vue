@@ -70,14 +70,15 @@ export default {
 
     .plan-banner {
       padding: 4rem 1rem 4rem 1rem;
+
       .text_6{
-        font-family: PingFang SC;
         font-style: normal;
         font-weight: 400;
-        font-size: 0.18rem;
         text-align: center;
-        color: #FFFFFF;
         margin-bottom: 5px;
+        color: #ffffff;
+        font-size: 0.63rem;
+        font-family: PingFang SC;
       }
       .slogin {
         .plan-label {
