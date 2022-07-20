@@ -18,7 +18,7 @@
     </div>
     <div class="pc-nav">
       <i class="nav-icon el-icon-back" @click="() => {this.$router.go(-1)}" />
-      <span class="nav-title">{{navTitle}}</span>
+      <span class="nav-title">{{pcNavTitle[active]}}</span>
       <div class="nav-icon-img" @click="() => {this.isNavModalShow = !this.isNavModalShow}">
         <img src="../assets/moreIcon.png" />
       </div>
@@ -64,6 +64,7 @@ export default {
         }
       ],
       translateX: [44, 120, 205, 289],
+      pcNavTitle: ['元计划', '关于我们', '规划图'],
       navRelate: {
         homeIndex: 0,
         about: 1,
