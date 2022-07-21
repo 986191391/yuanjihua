@@ -8,7 +8,7 @@
       </div>
       <span class="text_8">一起建设中国制造的全球共识</span>
     </div>
-    <div class="flex-col group_17">
+    <div class="flex-col aboutus-content">
       <span class="text_9">元计划由深圳行者艺术与四川萃雅教育联合发行</span>
       <span class="text_10">
         行者数字艺术有限公司是一家专注动漫形象设计版权的公司，致力于打造原创动漫IP产业化，数字化。核心成员包括原上市公司研发中心副总裁、原香港知名地产公司运营部负责人、以及国际顶级设计师、网络知名小说家。旗下原创国潮科幻动漫IP《元计划》已和国内知名数藏平台唯一艺术达成战略合作，致力于发展动漫数字藏品与实体产业相互赋能，布局原创动漫全生态产业链。
@@ -35,7 +35,7 @@
     </div>
     <div class="flex-col footer-address">
       <div class="flex-row contact_way">
-        <div class="flex-col section_9">
+        <div class="flex-col address_position">
         </div>
         <div class="flex-col items-start contactus">
           <div class="flex-row contactus_title">
@@ -65,7 +65,7 @@
                 <span class="text_21">客服微信</span>
               </div>
             </div>
-            <div class="flex-col group_12">
+            <div class="flex-col address_email">
               <div class="flex-row">
                 <img
                   src="../../assets/about/emailIcon.png"
@@ -73,15 +73,15 @@
                 />
                 <span class="text_22">合作邮箱</span>
               </div>
-              <span class="text_23">caijingya@xingzhe.team</span>
-              <div class="flex-row group_14">
+              <span class="yuan-email">caijingya@xingzhe.team</span>
+              <div class="flex-row address_label">
                 <img
                   src="../../assets/about/addressIcon.png"
                   class="image_4"
                 />
                 <span class="text_24">公司地址</span>
               </div>
-              <span class="text_25">中国广东省深圳市南山区粤海街道高新南七道南面国信投资大厦603-1</span>
+              <span class="yuan-address">中国广东省深圳市南山区粤海街道高新南七道南面国信投资大厦603-1</span>
             </div>
           </div>
         </div>
@@ -154,7 +154,8 @@ export default {
     padding-bottom: 29.42rem;
     position: relative;
   }
-  .group_17 {
+
+  .aboutus-content {
     margin-top: -16.8vw;
     align-self: center;
     width: 75%;
@@ -196,6 +197,7 @@ export default {
       line-height: 1.5rem;
     }
   }
+
   .group_4 {
     margin-top: 8.05rem;
     padding-top: 0.97rem;
@@ -238,25 +240,25 @@ export default {
   }
 
   .footer-address {
-    margin-top: 10.19rem;
+    margin-top: 13.6vw;
     background-image: url('../../assets/about/footerBg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 2.06rem 0 0.83rem;
+    padding: 3.4vw 5.7vw;
     padding-bottom: 0;
     background-color: #00000040;
 
       .contact_way {
-        width: 80%;
+        height: 28.3vw;
         margin: 0 auto;
         justify-content: center;
 
-        .section_9 {
-          width: 26.93rem;
+        .address_position {
+          width: 46.6vw;
+          height: 100%;
           background-image: url('../../assets/about/address.png');
           background-size: 100% 100%;
           background-repeat: no-repeat;
-          height: 17rem;
 
           .section_10 {
             padding: 7.04rem 0;
@@ -269,8 +271,6 @@ export default {
               background-image: url('../../assets/about/dialog.png');
               background-size: 100% 100%;
               background-repeat: no-repeat;
-              // background-repeat: no-repeat;
-              // background-size: cover;
               width: 14.91rem;
 
               .text_16 {
@@ -285,9 +285,10 @@ export default {
         }
 
         .contactus {
-          padding: 1.27rem 0 1.17rem;
+          padding: 2.3vw 3.44vw;
+          width: 41.9vw;
+          height: 100%;
           flex: 1 1 auto;
-          height: 17rem;
           background-color: #000000;
           background-image: url('../../assets/about/footeryuan.png');
           background-size: contain;
@@ -295,14 +296,14 @@ export default {
           background-position: right bottom ;
 
           .contactus_content {
-            padding: 0 2.03rem;
+            margin-top: 0.9vw;
             width: 100%;
 
-            .group_12 {
-              margin-top: 1.53rem;
+            .address_email {
+              margin-top: 2.4vw;
 
-              .text_23 {
-                margin-top: 0.48rem;
+              .yuan-email {
+                margin-top: 0.6vw;
                 align-self: flex-start;
                 color: #ffffff;
                 font-size: 0.63rem;
@@ -311,8 +312,8 @@ export default {
                 letter-spacing: 0.063rem;
               }
 
-              .group_14 {
-                margin-top: 1.16rem;
+              .address_label {
+                margin-top: 1.9vw;
 
                 .text_24 {
                   color: #ffffff;
@@ -323,8 +324,8 @@ export default {
                 }
               }
 
-              .text_25 {
-                margin-top: 0.39rem;
+              .yuan-address {
+                margin-top: 0.6vw;
                 color: #ffffff;
                 font-size: 0.63rem;
                 font-family: PingFang SC;
@@ -368,14 +369,15 @@ export default {
             }
 
             .image_2 {
-              width: 3.86rem;
-              height: 3.83rem;
+              width: 6vw;
+              height: 6vw;
+              // width: 3.86rem;
+              // height: 3.83rem;
             }
           }
 
           .contactus_title {
             width: 100%;
-            padding: 0 2.03rem;
             position: relative;
             display: flex;
             justify-content: space-between;
@@ -423,10 +425,6 @@ export default {
         line-height: 0.41rem;
         letter-spacing: 0.044rem;
       }
-
-      .yuanjihua-footer {
-        padding: 0.6rem 0;
-      }
   }
 
   .text_6 {
@@ -438,6 +436,65 @@ export default {
 
   .text_4 {
     text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .web-about-page {
+    min-width: 1080px;
+
+    .about-banner {
+      height: 540px;
+    }
+
+    .aboutus-content {
+      margin-top: -181.44px;
+    }
+
+    .footer-address {
+      min-width: 1080px;
+      margin-top: 10.19rem;
+      padding: 2.06rem 0 0.83rem;
+
+      .contact_way {
+        height: 305.64px;
+
+        .address_position {
+          width: 503.28px;
+        }
+
+        .contactus {
+          padding: 24.84px 37.152px;
+          width: 452.52px;
+
+          .contactus_content {
+            margin-top: 9.72px;
+            width: 100%;
+
+            .address_email {
+              margin-top: 25.92px;
+
+              .yuan-email {
+                margin-top: 6.48px;
+              }
+
+              .address_label {
+                margin-top: 20.52px;
+              }
+
+              .yuan-address {
+                margin-top: 6.48px;
+              }
+            }
+
+            .image_2 {
+              width: 64.8px;
+              height: 64.8px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>

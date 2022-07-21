@@ -124,7 +124,7 @@ export default {
   }
 
   .web-nav {
-    padding: 0 8vw;
+    padding: 0 5rem;
     height: 60px;
     background: transparent;
     // background-image: linear-gradient(180deg, #00000080 25.5%, #00000000 100%);
@@ -248,6 +248,12 @@ export default {
           border-bottom: 1px solid #eee;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .web-nav {
+      min-width: 1080px;
     }
   }
 

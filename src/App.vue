@@ -40,7 +40,7 @@ body, html {
 
 @media screen and (min-width: 600px) {
   #app {
-    min-width: 900px;
+    min-width: 1080px;
   }
 }
 

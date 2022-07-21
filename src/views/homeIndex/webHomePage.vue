@@ -166,6 +166,8 @@ export default {
       background-position: center center;
       width: 100vw;
       height: 56vw;
+      min-width: 1080px;
+      min-height: 607.5px;
 
       .image_2 {
         width: 12.56rem;
@@ -188,58 +190,6 @@ export default {
       padding: 0 5.7vw;
       position: relative;
       cursor: pointer;
-
-      .story_3 {
-        height: 23.4vw;
-        padding: 2.61rem 1.66rem 2.94rem;
-        margin-top: 0;
-        background-image: url('../../assets/session3@2x.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        transition: all 0.5s;
-        z-index: 3;
-        text-align: left;
-        position: relative;
-
-        &.active {
-          height: 46.8vw;
-          margin-top: -15.5rem;
-          background-size: cover;
-          background-position: 55% 100%;
-          cursor: default;
-        }
-
-        .text-wrapper_2 {
-          padding: 0.39rem 0 0.42rem;
-          background-color: #ffffff;
-          border-radius: 0.16rem;
-          width: 5.16rem;
-
-          .text_9 {
-            color: #000000;
-            font-size: 0.69rem;
-            font-family: PingFang SC;
-            font-weight: 600;
-            line-height: 0.64rem;
-          }
-        }
-
-        .text_10 {
-          text-align: left;
-          margin-top: 0.73rem;
-          color: #ffffff;
-          font-size: 0.63rem;
-          font-family: PingFang SC;
-          line-height: 1.38rem;
-          width: 60%;
-
-          &.section_hidden {
-            display: none;
-          }
-        }
-      }
-
       .story_detail {
         display: none;
         height: 21rem;
@@ -332,7 +282,7 @@ export default {
           width: 100%;
           margin-right: -50%;
           z-index: 10;
-          margin-bottom: -15.5rem;
+          margin-bottom: -23.4vw;
           cursor: default;
         }
 
@@ -386,7 +336,7 @@ export default {
           width: 100%;
           margin-left: -50%;
           z-index: 10;
-          margin-bottom: -15.5rem;
+          margin-bottom: -23.4vw;
           cursor: default;
         }
 
@@ -418,6 +368,58 @@ export default {
           }
         }
       }
+
+      .story_3 {
+        height: 23.4vw;
+        padding: 2.61rem 1.66rem 2.94rem;
+        margin-top: 0;
+        background-image: url('../../assets/session3@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        transition: all 0.5s;
+        z-index: 3;
+        text-align: left;
+        position: relative;
+
+        &.active {
+          height: 46.8vw;
+          margin-top: -23.4vw;
+          background-size: cover;
+          background-position: 55% 100%;
+          cursor: default;
+        }
+
+        .text-wrapper_2 {
+          padding: 0.39rem 0 0.42rem;
+          background-color: #ffffff;
+          border-radius: 0.16rem;
+          width: 5.16rem;
+
+          .text_9 {
+            color: #000000;
+            font-size: 0.69rem;
+            font-family: PingFang SC;
+            font-weight: 600;
+            line-height: 0.64rem;
+          }
+        }
+
+        .text_10 {
+          text-align: left;
+          margin-top: 0.73rem;
+          color: #ffffff;
+          font-size: 0.63rem;
+          font-family: PingFang SC;
+          line-height: 1.38rem;
+          width: 60%;
+
+          &.section_hidden {
+            display: none;
+          }
+        }
+      }
+
     }
 
     .section-more-icon {
@@ -429,5 +431,36 @@ export default {
         display: none;
       }
     }
+}
+
+@media screen and (max-width: 1080px) {
+  .web-container {
+    .story_list {
+      height: 30.81rem;
+      margin-top: 3.53rem;
+      padding: 0 3.47rem;
+      .story_1 {
+        height: 15.4375rem;
+        &.active {
+          height: 30.86rem;
+          margin-bottom: -15.4375rem;
+        }
+      }
+      .story_2 {
+        height: 15.4375rem;
+        &.active {
+          height: 30.86rem;
+          margin-bottom: -15.4375rem;
+        }
+      }
+      .story_3 {
+        height: 15.4375rem;
+        &.active {
+          height: 30.81rem;
+          margin-top: -15.4375rem;
+        }
+      }
+    }
+  }
 }
 </style>
