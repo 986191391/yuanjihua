@@ -124,7 +124,7 @@ export default {
   }
 
   .web-nav {
-    padding: 0 5rem;
+    padding: 0 8vw;
     height: 60px;
     background: transparent;
     // background-image: linear-gradient(180deg, #00000080 25.5%, #00000000 100%);

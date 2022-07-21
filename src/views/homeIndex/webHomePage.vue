@@ -421,7 +421,7 @@ export default {
     }
 
     .section-more-icon {
-      margin-top: 1.83rem;
+      margin-top: 1rem;
       width: 1.91rem;
       height: 0.36rem;
 
