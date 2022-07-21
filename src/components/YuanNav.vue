@@ -6,7 +6,7 @@
         class="nav_active_image"
       />
       <div class="flex-row nav">
-        <img class="active-light" :style="{ transform: `translateX(${translateX[active]}px)` }" src="../assets/highlight.png" alt="" />
+        <img class="active-light" :style="{ transform: `translateX(${translateX[active]}rem)` }" src="../assets/highlight.png" alt="" />
         <router-link
           v-for="(item, index) in routeInfo"
           :key="index"
@@ -63,7 +63,7 @@ export default {
           active: 3
         }
       ],
-      translateX: [44, 120, 205, 289],
+      translateX: [3.3, 8.8, 14.5, 20.2],
       pcNavTitle: ['元计划', '关于我们', '规划图'],
       navRelate: {
         homeIndex: 0,
@@ -150,7 +150,7 @@ export default {
       }
 
       .nav-item {
-        margin: 0 0.8rem;
+        margin: 0 1.3rem;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -23,7 +23,7 @@ export default {
 <style scoped lang="scss">
   .yuanjihua-footer {
     .web-footer {
-      padding: 1vw 0;
+      padding: 2vw 0;
       width: 100%;
       display: flex;
       justify-content: center;

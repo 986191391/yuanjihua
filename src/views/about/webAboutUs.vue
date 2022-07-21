@@ -2,15 +2,11 @@
   <div class="flex-col web-about-page">
     <div class="flex-col about-banner">
       <!-- <YuanNav /> -->
-    </div>
-    <div class="flex-col view">
-      <div class="flex-col">
-        <div class="flex-col items-center group_3">
-          <span class="text_4 text_28">about us</span>
-          <span class="text_6 text_29">关于我们</span>
-        </div>
-        <span class="text_8">一起建设中国制造的全球共识</span>
+      <div class="flex-col items-center group_3">
+        <span class="text_4 text_28">about us</span>
+        <span class="text_6 text_29">关于我们</span>
       </div>
+      <span class="text_8">一起建设中国制造的全球共识</span>
     </div>
     <div class="flex-col group_17">
       <span class="text_9">元计划由深圳行者艺术与四川萃雅教育联合发行</span>
@@ -116,16 +112,12 @@ export default {
   overflow-x: hidden;
 
   .about-banner {
-    height: 33.4rem;
+    height: 56vw;
     background-image: url('../../assets/about/aboutbanner@2x.png');
     background-size: cover;
     background-repeat: no-repeat;
-  }
+    justify-content: center;
 
-  .view {
-    margin-top: -18.58rem;
-    padding-bottom: 29.42rem;
-    position: relative;
     .group_3 {
       padding-top: 1.09rem;
       height: 2.67rem;
@@ -156,8 +148,14 @@ export default {
       letter-spacing: 0.82rem;
     }
   }
+
+  .view {
+    margin-top: -18.58rem;
+    padding-bottom: 29.42rem;
+    position: relative;
+  }
   .group_17 {
-    margin-top: -21rem;
+    margin-top: -16.8vw;
     align-self: center;
     width: 75%;
     position: relative;
