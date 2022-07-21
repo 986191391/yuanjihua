@@ -1,8 +1,7 @@
 <template>
   <div class="web-container">
-    <div class="flex-col banner">
-      <!-- <YuanNav /> -->
-      <div class="flex-col items-center group_3">
+    <div class="items-center justify-center banner">
+      <div class="flex-col items-center">
         <img
           src="../../assets/logo.png"
           class="image_2"
@@ -12,7 +11,7 @@
     </div>
     <div class="flex-col story_list">
       <div class="flex-row">
-        <div :class="`flex-col equal-division-item ${sectionActive === 1 && 'active'}`" @click="(e) => setSectionActive(e, 1)">
+        <div :class="`flex-col story_1 ${sectionActive === 1 && 'active'}`" @click="(e) => setSectionActive(e, 1)">
           <div class="flex-col items-center text-wrapper"><span class="text_5">第一章· 前序</span></div>
           <div :class="`cloes_active_icon ${sectionActive === 1 && 'icon_active'}`" @click="setSectionHidden">x</div>
           <span :class="`text_6 ${sectionActive === 1 && 'section_hidden'}`">
@@ -47,7 +46,7 @@
           </div>
           <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 1 && 'section_hidden'}`" />
         </div>
-        <div :class="`flex-col equal-division-item_1 ${sectionActive === 2 && 'active'}`" @click="(e) => setSectionActive(e, 2)">
+        <div :class="`flex-col story_2 ${sectionActive === 2 && 'active'}`" @click="(e) => setSectionActive(e, 2)">
           <div class="flex-col items-center text-wrapper_1"><span class="text_7">第二章 · 起缘</span></div>
           <div :class="`cloes_active_icon ${sectionActive === 2 && 'icon_active'}`" @click="setSectionHidden">x</div>
           <span :class="`text_8 ${sectionActive === 2 && 'section_hidden'}`">
@@ -83,7 +82,7 @@
           <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 2 && 'section_hidden'}`" />
         </div>
       </div>
-      <div :class="`flex-col section_9 ${sectionActive === 3 && 'active'}`" @click="(e) => setSectionActive(e, 3)">
+      <div :class="`flex-col story_3 ${sectionActive === 3 && 'active'}`" @click="(e) => setSectionActive(e, 3)">
         <div class="flex-col items-center text-wrapper_2"><span class="text_9">第三章· 碰撞</span></div>
         <div :class="`cloes_active_icon ${sectionActive === 3 && 'icon_active'}`" @click="setSectionHidden">x</div>
         <span :class="`text_10  ${sectionActive === 3 && 'section_hidden'}`">
@@ -160,22 +159,20 @@ export default {
     flex-direction: column;
 
     .banner {
-    background-image: url('../../assets/banner@2x.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 33.3rem;
+      background-image: url('../../assets/banner@2x.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100vw;
+      height: 56vw;
 
-    .group_3 {
-        margin-top: 9.06rem;
-
-        .image_2 {
+      .image_2 {
         width: 12.56rem;
         height: 4.38rem;
-        }
+      }
 
-        .text_4 {
+      .text_4 {
         margin-top: 1.33rem;
         color: #ffffff;
         font-size: 3.13rem;
@@ -183,54 +180,17 @@ export default {
         font-weight: bold;
         line-height: 3.05rem;
         letter-spacing: 0.16rem;
-        }
-    }
+      }
     }
 
     .story_list {
-    height: 30.81rem;
-    margin-top: 3.53rem;
-    padding: 0 3.47rem;
-    position: relative;
-    cursor: pointer;
+      margin-top: 5.7vw;
+      padding: 0 5.7vw;
+      position: relative;
+      cursor: pointer;
 
-    .part-one {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-        z-index: 1;
-
-        .text-wrapper {
-        padding: 0.41rem 0 0.42rem;
-        background-color: #ffffff;
-        border-radius: 0.16rem;
-        width: 5.16rem;
-        .text_5 {
-            color: #000000;
-            font-size: 0.69rem;
-            font-family: PingFang SC;
-            font-weight: 600;
-            line-height: 0.64rem;
-        }
-        }
-
-        .text_6 {
-        text-align: left;
-        margin-top: 0.73rem;
-        color: #ffffff;
-        font-size: 0.63rem;
-        font-family: PingFang SC;
-        line-height: 1.38rem;
-        width: 14.38rem;
-        }
-    }
-
-    .section_9 {
-        height: 15.4375rem;
+      .story_3 {
+        height: 23.4vw;
         padding: 2.61rem 1.66rem 2.94rem;
         margin-top: 0;
         background-image: url('../../assets/session3@2x.png');
@@ -243,46 +203,46 @@ export default {
         position: relative;
 
         &.active {
-        height: 30.81rem;
-        margin-top: -15.5rem;
-        background-size: cover;
-        background-position: 55% 100%;
-        cursor: default;
+          height: 46.8vw;
+          margin-top: -15.5rem;
+          background-size: cover;
+          background-position: 55% 100%;
+          cursor: default;
         }
 
         .text-wrapper_2 {
-        padding: 0.39rem 0 0.42rem;
-        background-color: #ffffff;
-        border-radius: 0.16rem;
-        width: 5.16rem;
+          padding: 0.39rem 0 0.42rem;
+          background-color: #ffffff;
+          border-radius: 0.16rem;
+          width: 5.16rem;
 
-        .text_9 {
+          .text_9 {
             color: #000000;
             font-size: 0.69rem;
             font-family: PingFang SC;
             font-weight: 600;
             line-height: 0.64rem;
-        }
+          }
         }
 
         .text_10 {
-        text-align: left;
-        margin-top: 0.73rem;
-        color: #ffffff;
-        font-size: 0.63rem;
-        font-family: PingFang SC;
-        line-height: 1.38rem;
-        width: 60%;
+          text-align: left;
+          margin-top: 0.73rem;
+          color: #ffffff;
+          font-size: 0.63rem;
+          font-family: PingFang SC;
+          line-height: 1.38rem;
+          width: 60%;
 
-        &.section_hidden {
+          &.section_hidden {
             display: none;
+          }
         }
-        }
-    }
+      }
 
-    .story_detail {
+      .story_detail {
         display: none;
-        height: 22rem;
+        height: 21rem;
         flex: 1;
         opacity: 0;
         margin-top: 1.5rem;
@@ -316,19 +276,19 @@ export default {
           width: 5.16rem;
 
           .scan_image {
-              width: 4.16rem;
-              height: 4.13rem;
+            width: 4.16rem;
+            height: 4.13rem;
           }
           .scan_code_title {
-              margin-top: 0.33rem;
-              color: #ffffff;
-              font-size: 0.63rem;
-              font-family: PingFang SC;
+            margin-top: 0.33rem;
+            color: #ffffff;
+            font-size: 0.63rem;
+            font-family: PingFang SC;
           }
         }
-    }
+      }
 
-    .cloes_active_icon {
+      .cloes_active_icon {
         padding: 0 0 3px 0;
         width: 30px;
         height: 30px;
@@ -347,18 +307,17 @@ export default {
         cursor: pointer;
 
         &.icon_active {
-        display: flex;
+          display: flex;
         }
-    }
+      }
 
-    .equal-division-item {
-        height: 15.4375rem;
+      .story_1 {
+        height: 23.4vw;
         width: 50%;
         margin-right: 0%;
         background-color: #000d22;
         position: relative;
         background-image: url('../../assets/session1@2x.png');
-        // background-size: 100% 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -369,52 +328,51 @@ export default {
         overflow: hidden;
 
         &.active {
-        width: 100%;
-        margin-right: -50%;
-        z-index: 10;
-        height: 30.86rem;
-        margin-bottom: -15.5rem;
-        cursor: default;
+          height: 46.8vw;
+          width: 100%;
+          margin-right: -50%;
+          z-index: 10;
+          margin-bottom: -15.5rem;
+          cursor: default;
         }
 
         .text-wrapper {
-        padding: 0.41rem 0 0.42rem;
-        background-color: #ffffff;
-        border-radius: 0.16rem;
-        width: 5.16rem;
+          padding: 0.41rem 0 0.42rem;
+          background-color: #ffffff;
+          border-radius: 0.16rem;
+          width: 5.16rem;
 
-        .text_5 {
+          .text_5 {
             color: #000000;
             font-size: 0.69rem;
             font-family: PingFang SC;
             font-weight: 600;
             line-height: 0.64rem;
-        }
+          }
         }
 
         .text_6 {
-        text-align: left;
-        margin-top: 0.73rem;
-        color: #ffffff;
-        font-size: 0.63rem;
-        font-family: PingFang SC;
-        line-height: 1.38rem;
-        width: 14.38rem;
+          text-align: left;
+          margin-top: 0.73rem;
+          color: #ffffff;
+          font-size: 0.63rem;
+          font-family: PingFang SC;
+          line-height: 1.38rem;
+          width: 14.38rem;
 
-        &.section_hidden {
-            display: none;
+          &.section_hidden {
+              display: none;
+          }
         }
-        }
-    }
+      }
 
-    .equal-division-item_1 {
-        height: 15.4375rem;
+      .story_2 {
+        height: 23.4vw;
         width: 50%;
         margin-left: 0%;
         background-color: #072e33;
         position: relative;
         background-image: url('../../assets/session2@2x.png');
-        // background-size: 100% 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -424,47 +382,46 @@ export default {
         overflow: hidden;
 
         &.active {
-        width: 100%;
-        margin-left: -50%;
-        z-index: 10;
-        height: 30.86rem;
-        margin-bottom: -15.5rem;
-        cursor: default;
+          height: 46.8vw;
+          width: 100%;
+          margin-left: -50%;
+          z-index: 10;
+          margin-bottom: -15.5rem;
+          cursor: default;
         }
 
         .text-wrapper_1 {
-        padding: 0.41rem 0 0.42rem;
-        background-color: #ffffff;
-        border-radius: 0.16rem;
-        width: 5.38rem;
-        .text_7 {
+          padding: 0.41rem 0 0.42rem;
+          background-color: #ffffff;
+          border-radius: 0.16rem;
+          width: 5.38rem;
+          .text_7 {
             color: #000000;
             font-size: 0.69rem;
             font-family: PingFang SC;
             font-weight: 600;
             line-height: 0.64rem;
-        }
+          }
         }
 
         .text_8 {
-        text-align: left;
-        margin-top: 0.73rem;
-        color: #ffffff;
-        font-size: 0.63rem;
-        font-family: PingFang SC;
-        line-height: 1.38rem;
-        width: 14.53rem;
+          text-align: left;
+          margin-top: 0.73rem;
+          color: #ffffff;
+          font-size: 0.63rem;
+          font-family: PingFang SC;
+          line-height: 1.38rem;
+          width: 14.53rem;
 
-        &.section_hidden {
+          &.section_hidden {
             display: none;
+          }
         }
-        }
-    }
+      }
     }
 
     .section-more-icon {
       margin-top: 1.83rem;
-      // background-color: #ffffff;
       width: 1.91rem;
       height: 0.36rem;
 

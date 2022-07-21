@@ -184,7 +184,7 @@ export default {
         font-family: PingFang SC;
         font-weight: 200;
         line-height: 0.75rem;
-        font-size: 1.05rem;
+        font-size: 0.9rem;
       }
     }
   }
