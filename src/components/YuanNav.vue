@@ -127,14 +127,12 @@ export default {
     padding: 0 5rem;
     height: 60px;
     background: transparent;
-    // background-image: linear-gradient(180deg, #00000080 25.5%, #00000000 100%);
 
     &.web-nav-scrollbg {
       background-color: #000;
     }
 
     .nav_active_image {
-      margin-top: 0.5rem;
       align-self: center;
       width: 6.28rem;
       height: 2.19rem;
