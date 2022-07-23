@@ -26,7 +26,6 @@ export default {
     overflow-x: hidden;
     height: 100%;
     min-height: 100vh;
-    user-select: none;
   }
 
   @media screen and (max-width: 600px) {
