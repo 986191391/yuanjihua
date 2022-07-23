@@ -1,11 +1,11 @@
 <template>
   <div class="yuanjihua-nav">
-    <div :class="`web-nav justify-between nav_container ${isScroll && 'web-nav-scrollbg'}`">
+    <div :class="`web-nav justify-between ${isScroll && 'web-nav-scrollbg'}`">
       <img
         src="../assets/logo.png"
         class="nav_active_image"
       />
-      <div class="flex-row nav">
+      <div class="flex-row nav-list">
         <img class="active-light" :style="{ transform: `translateX(${translateX[active]}rem)` }" src="../assets/highlight.png" alt="" />
         <router-link
           v-for="(item, index) in routeInfo"
@@ -124,7 +124,7 @@ export default {
   }
 
   .web-nav {
-    padding: 0 5rem;
+    padding: 0 8vw;
     height: 60px;
     background: transparent;
 
@@ -138,7 +138,7 @@ export default {
       height: 2.19rem;
     }
 
-    .nav {
+    .nav-list {
       margin-right: 0.53rem;
 
       .active-light {
@@ -156,11 +156,6 @@ export default {
         justify-content: center;
 
         &.nav-active {
-          // background-image: url('../assets/highlight.png');
-          // background-size: 30px 15px;
-          // background-position: 50% 0;
-          // background-repeat: no-repeat;
-
           & > .text {
             font-weight: 350;
           }
@@ -252,6 +247,7 @@ export default {
   @media screen and (max-width: 1080px) {
     .web-nav {
       min-width: 1080px;
+      padding: 0 5rem;
     }
   }
 
