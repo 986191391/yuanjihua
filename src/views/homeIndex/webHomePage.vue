@@ -1,18 +1,14 @@
 <template>
   <div class="web-container">
-    <div class="items-center justify-center banner">
-      <video  autoplay='autoplay' loop="loop">
-        <source src="../../assets/pc/pc端横版白t.mp4" type="video/mp4">
-       </video>
-      <!-- <div class="flex-col items-center">
-        <img
-          src="../../assets/logo.png"
-          class="image_2"
-        />
-        <span class="text_4">一起建设中国制造的全球共识</span>
-
-      </div> -->
-    </div>
+    <video
+      muted=""
+      loop="loop"
+      autoplay="autoplay"
+      src="../../assets/vediopc.mp4"
+      class="items-center justify-center banner"
+      id="video-home"
+      data-object-fit=""
+    />
     <div class="flex-col story_list">
       <div class="flex-row">
         <div :class="`flex-col story left-story ${sectionActive === 1 && 'left-active'}`" @click="(e) => setSectionActive(e, 1)">
@@ -133,7 +129,6 @@
 </template>
 
 <script>
-// import YuanNav from '../../components/YuanNav.vue'
 import YuanFooter from '../../components/YuanFooter.vue'
 
 export default {
@@ -163,15 +158,11 @@ export default {
     flex-direction: column;
 
     .banner {
-      background-image: url('../../assets/banner@2x.png');
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      width: 100vw;
       height: 56vw;
-      min-width: 1080px;
-      min-height: 607.5px;
+      min-height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
 
       .image_2 {
         width: 20.8vw;
@@ -188,7 +179,7 @@ export default {
     }
 
     .story_list {
-      margin-top: 5.7vw;
+      // margin-top: 5.7vw;
       padding: 0 5.7vw;
       position: relative;
       cursor: pointer;

@@ -1,20 +1,16 @@
 <template>
   <div class="pc-container">
-    <!-- <YuanNav navTitle="元计划" /> -->
     <div class="flex-col pc-homeindex">
-       <video  autoplay='autoplay' loop="loop">
-        <source src="https://yuanjihua111.oss-cn-hangzhou.aliyuncs.com/%E7%A7%BB%E5%8A%A8%E7%AB%AF%20%E7%AB%96%E7%89%88%E7%99%BDt.mp4" type="video/mp4">
-       </video>
-      <!-- <div class="flex-col pc-banner">
-        <img
-          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62cebae603330d00110d3d2c//16578082901556610546.png"
-          class="image_5"
-        />
-        <div class="flex-col items-center slogin">
-          <span class="slogin_1">一起建设</span>
-          <span class="slogin_2">中国制造的全球共识</span>
-        </div>
-      </div> -->
+      <!-- <video
+        muted=""
+        loop="loop"
+        autoplay="autoplay"
+        src="../../assets/mobileVedio.mp4"
+        class="flex-col pc-banner"
+        id="video-home"
+        data-object-fit=""
+      /> -->
+      <div class="flex-col pc-banner" />
       <Swiper class="custom-swiper" />
     </div>
     <YuanFooter />
@@ -22,7 +18,6 @@
 </template>
 
 <script>
-// import YuanNav from '../../components/YuanNav.vue'
 import YuanFooter from '../../components/YuanFooter.vue'
 import Swiper from './swiper.vue'
 
@@ -42,23 +37,28 @@ export default {
     flex-direction: column;
 
     .pc-homeindex {
-
       .pc-banner {
-          padding: 6.81rem 0 17.63rem;
-          background-image: url('../../assets/pc/pcbg.png');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
+        height: 35rem;
+        // padding: 6.81rem 0 17.63rem;
+        background-image: url('../../assets/mobilebg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center cover;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          content: "";
+          // background: rgba(0,0,0,.7);
+        }
       }
 
       .custom-swiper {
-          margin-top: -11rem;
-      }
-
-      .image_5 {
-          align-self: center;
-          width: 8rem;
-          height: 2.75rem;
+        margin-top: -10rem;
       }
 
       .slogin {
