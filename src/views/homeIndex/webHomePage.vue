@@ -1,8 +1,7 @@
 <template>
   <div class="web-container">
-    <div class="flex-col banner">
-      <YuanNav />
-      <div class="flex-col items-center group_3">
+    <div class="items-center justify-center banner">
+      <div class="flex-col items-center">
         <img
           src="../../assets/logo.png"
           class="image_2"
@@ -12,10 +11,10 @@
     </div>
     <div class="flex-col story_list">
       <div class="flex-row">
-        <div :class="`flex-col equal-division-item ${sectionActive === 1 && 'active'}`" @click="(e) => setSectionActive(e, 1)">
-          <div class="flex-col items-center text-wrapper"><span class="text_5">第一章· 前序</span></div>
+        <div :class="`flex-col story left-story ${sectionActive === 1 && 'left-active'}`" @click="(e) => setSectionActive(e, 1)">
+          <div class="flex-col items-center story_label"><span class="text_5">第一章· 前序</span></div>
           <div :class="`cloes_active_icon ${sectionActive === 1 && 'icon_active'}`" @click="setSectionHidden">x</div>
-          <span :class="`text_6 ${sectionActive === 1 && 'section_hidden'}`">
+          <span :class="`story_desc ${sectionActive === 1 && 'section_hidden'}`">
             在宇宙中的另一个巨大的恒星上，存在着一个已经繁衍进化了 ，1000万年的高等文明生物「元」，元类文明有着与人类高度相近的生活方式......
           </span>
           <div :class="`justify-between story_detail ${sectionActive === 1 && 'story_detail_active'}`">
@@ -39,18 +38,18 @@
             </div>
             <div class="flex-col items-center scan_code_wrapper">
               <img
-                src="https://project-user-resource-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62cebae603330d00110d3d2c/16580460030079475322.png"
+                src="../../assets/scan.png"
                 class="scan_image"
               />
               <span class="scan_code_title">元计划公众号</span>
             </div>
           </div>
-          <div :class="`section-more-icon  ${sectionActive === 1 && 'section_hidden'}`" />
+          <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 1 && 'section_hidden'}`" />
         </div>
-        <div :class="`flex-col equal-division-item_1 ${sectionActive === 2 && 'active'}`" @click="(e) => setSectionActive(e, 2)">
-          <div class="flex-col items-center text-wrapper_1"><span class="text_7">第二章 · 起缘</span></div>
+        <div :class="`flex-col story right-story ${sectionActive === 2 && 'right-active'}`" @click="(e) => setSectionActive(e, 2)">
+          <div class="flex-col items-center story_label"><span class="text_5">第二章 · 起缘</span></div>
           <div :class="`cloes_active_icon ${sectionActive === 2 && 'icon_active'}`" @click="setSectionHidden">x</div>
-          <span :class="`text_8 ${sectionActive === 2 && 'section_hidden'}`">
+          <span :class="`story_desc ${sectionActive === 2 && 'section_hidden'}`">
             三个月前，博士通过观测发现，一颗在元星系中从未见过的行星，进入了元星球的环绕轨道中，并且这颗行星的质量和引力似乎出奇的大......
           </span>
           <div :class="`justify-between story_detail ${sectionActive === 2 && 'story_detail_active'}`">
@@ -74,19 +73,19 @@
             </div>
             <div class="flex-col items-center scan_code_wrapper">
               <img
-                src="https://project-user-resource-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62cebae603330d00110d3d2c/16580460030079475322.png"
+                src="../../assets/scan.png"
                 class="scan_image"
               />
               <span class="scan_code_title">元计划公众号</span>
             </div>
           </div>
-          <div :class="`section-more-icon  ${sectionActive === 2 && 'section_hidden'}`" />
+          <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 2 && 'section_hidden'}`" />
         </div>
       </div>
-      <div :class="`flex-col section_9 ${sectionActive === 3 && 'active'}`" @click="(e) => setSectionActive(e, 3)">
-        <div class="flex-col items-center text-wrapper_2"><span class="text_9">第三章· 碰撞</span></div>
+      <div :class="`flex-col story_3 ${sectionActive === 3 && 'active'}`" @click="(e) => setSectionActive(e, 3)">
+        <div class="flex-col items-center story_label"><span class="text_5">第三章· 碰撞</span></div>
         <div :class="`cloes_active_icon ${sectionActive === 3 && 'icon_active'}`" @click="setSectionHidden">x</div>
-        <span :class="`text_10  ${sectionActive === 3 && 'section_hidden'}`">
+        <span :class="`story3_desc  ${sectionActive === 3 && 'section_hidden'}`">
           元计划正式启动后，由博士领导各领域顶尖科学家团队，以及护卫军队随行。为不引起民众恐慌动乱，于夜色中秘密出发南部磁场边界，这一次打开红色电磁力场与以往不同，博士团队利用从异常行星采集的频率波段，对红磁场进行点对点式穿透果然不负众望，经过几天的尝试，连接南北半球的通道终于被打开......
         </span>
         <div :class="`justify-between story_detail ${sectionActive === 3 && 'story_detail_active'}`">
@@ -116,13 +115,13 @@
           </div>
           <div class="flex-col items-center scan_code_wrapper">
             <img
-              src="https://project-user-resource-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62cebae603330d00110d3d2c/16580460030079475322.png"
+              src="../../assets/scan.png"
               class="scan_image"
             />
             <span class="scan_code_title">元计划公众号</span>
           </div>
         </div>
-        <div :class="`section-more-icon  ${sectionActive === 3 && 'section_hidden'}`">→</div>
+        <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 3 && 'section_hidden'}`" />
       </div>
     </div>
     <YuanFooter />
@@ -130,11 +129,11 @@
 </template>
 
 <script>
-import YuanNav from '../../components/YuanNav.vue'
+// import YuanNav from '../../components/YuanNav.vue'
 import YuanFooter from '../../components/YuanFooter.vue'
 
 export default {
-  components: { YuanNav, YuanFooter },
+  components: { YuanFooter },
   data () {
     return {
       sectionActive: false,
@@ -160,133 +159,44 @@ export default {
     flex-direction: column;
 
     .banner {
-    background-image: url('../../assets/banner@2x.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 33.3rem;
+      background-image: url('../../assets/banner@2x.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100vw;
+      height: 56vw;
+      min-width: 1080px;
+      min-height: 607.5px;
 
-    .group_3 {
-        margin-top: 9.06rem;
+      .image_2 {
+        width: 20.8vw;
+        height: 7.2vw;
+      }
 
-        .image_2 {
-        width: 12.56rem;
-        height: 4.38rem;
-        }
-
-        .text_4 {
-        margin-top: 1.33rem;
+      .text_4 {
+        margin-top: 1vw;
         color: #ffffff;
-        font-size: 3.13rem;
+        font-size: 4.4vw;
         font-family: "Microsoft YaHei";
         font-weight: bold;
-        line-height: 3.05rem;
-        letter-spacing: 0.16rem;
-        }
-    }
+      }
     }
 
     .story_list {
-    height: 30.81rem;
-    margin-top: 3.53rem;
-    padding: 0 3.47rem;
-    position: relative;
-    cursor: pointer;
-
-    .part-one {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-        z-index: 1;
-
-        .text-wrapper {
-        padding: 0.41rem 0 0.42rem;
-        background-color: #ffffff;
-        border-radius: 0.16rem;
-        width: 5.16rem;
-        .text_5 {
-            color: #000000;
-            font-size: 0.69rem;
-            font-family: PingFang SC;
-            font-weight: 600;
-            line-height: 0.64rem;
-        }
-        }
-
-        .text_6 {
-        text-align: left;
-        margin-top: 0.73rem;
-        color: #ffffff;
-        font-size: 0.63rem;
-        font-family: PingFang SC;
-        line-height: 1.38rem;
-        width: 14.38rem;
-        }
-    }
-
-    .section_9 {
-        height: 15.4375rem;
-        padding: 2.61rem 1.66rem 2.94rem;
-        margin-top: 0;
-        background-image: url('../../assets/session3@2x.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        transition: all 0.5s;
-        z-index: 3;
-        text-align: left;
-        position: relative;
-
-        &.active {
-        height: 30.81rem;
-        margin-top: -15.5rem;
-        background-size: cover;
-        background-position: 55% 100%;
-        cursor: default;
-        }
-
-        .text-wrapper_2 {
-        padding: 0.39rem 0 0.42rem;
-        background-color: #ffffff;
-        border-radius: 0.16rem;
-        width: 5.16rem;
-
-        .text_9 {
-            color: #000000;
-            font-size: 0.69rem;
-            font-family: PingFang SC;
-            font-weight: 600;
-            line-height: 0.64rem;
-        }
-        }
-
-        .text_10 {
-        text-align: left;
-        margin-top: 0.73rem;
-        color: #ffffff;
-        font-size: 0.63rem;
-        font-family: PingFang SC;
-        line-height: 1.38rem;
-        width: 60%;
-
-        &.section_hidden {
-            display: none;
-        }
-        }
-    }
-
-    .story_detail {
+      margin-top: 5.7vw;
+      padding: 0 5.7vw;
+      position: relative;
+      cursor: pointer;
+      .story_detail {
         display: none;
-        height: 22rem;
+        height: 29.3vw;
         flex: 1;
         opacity: 0;
-        margin-top: 1.5rem;
+        margin-top: 2vw;
+        font-size: 1.2vw;
         align-items: flex-end;
+        font-family: PingFang SC;
 
         &.story_detail_active {
           display: flex;
@@ -294,44 +204,42 @@ export default {
         }
 
         .desc {
+          line-height: 2.2vw;
           width: 60%;
           height: 100%;
           overflow: scroll;
 
           & > span {
-              text-indent:24px;
-              color: #ffffff;
-              font-size: 0.63rem;
-              font-family: PingFang SC;
-              line-height: 1.38rem;
-              text-align: justify;
+            text-indent:24px;
+            color: #ffffff;
+            text-align: justify;
+
+            &:not(:first-child) {
+              margin-top: 8px;
+            }
           }
         }
 
         .scan_code_wrapper {
-          width: 5.16rem;
-
           .scan_image {
-              width: 4.16rem;
-              height: 4.13rem;
+            width: 6.5vw;
+            height: 6.5vw;
           }
           .scan_code_title {
-              margin-top: 0.33rem;
-              color: #ffffff;
-              font-size: 0.63rem;
-              font-family: PingFang SC;
+            margin-top: 0.33rem;
+            color: #ffffff;
+            font-size: 1.2vw;
           }
         }
-    }
+      }
 
-    .cloes_active_icon {
-        padding: 0 0 3px 0;
-        width: 30px;
-        height: 30px;
+      .cloes_active_icon {
+        width: 2vw;
+        height: 2vw;
         position: absolute;
-        right: 20px;
-        top: 20px;
-        font-size: 1.5rem;
+        right: 1vw;
+        top: 1vw;
+        font-size: 1.5vw;
         background-color: #fff;
         opacity: 0.8;
         border-radius: 50%;
@@ -343,130 +251,238 @@ export default {
         cursor: pointer;
 
         &.icon_active {
-        display: flex;
+          display: flex;
         }
-    }
+      }
 
-    .equal-division-item {
-        height: 15.4375rem;
+      .story_label {
+        width: 8.5vw;
+        height: 2.3vw;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text_5 {
+          color: #000000;
+          font-family: PingFang SC;
+          font-weight: 600;
+        }
+      }
+
+      .story {
+        padding: 4.3vw 2.7vw 5.4vw;
+        height: 23.4vw;
         width: 50%;
         margin-right: 0%;
         background-color: #000d22;
         position: relative;
-        background-image: url('../../assets/session1@2x.png');
-        // background-size: 100% 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         position: relative;
-        padding: 2.56rem 1.68rem 2.96rem;
         transition: all 0.5s;
         z-index: 3;
         overflow: hidden;
+        font-size: 1.2vw;
 
-        &.active {
-        width: 100%;
-        margin-right: -50%;
-        z-index: 10;
-        height: 30.86rem;
-        margin-bottom: -15.5rem;
-        cursor: default;
+        &.left-story {
+          background-image: url('../../assets/session1@2x.png');
         }
 
-        .text-wrapper {
-        padding: 0.41rem 0 0.42rem;
-        background-color: #ffffff;
-        border-radius: 0.16rem;
-        width: 5.16rem;
-
-        .text_5 {
-            color: #000000;
-            font-size: 0.69rem;
-            font-family: PingFang SC;
-            font-weight: 600;
-            line-height: 0.64rem;
-        }
+        &.right-story {
+          background-image: url('../../assets/session2@2x.png');
         }
 
-        .text_6 {
-        text-align: left;
-        margin-top: 0.73rem;
-        color: #ffffff;
-        font-size: 0.63rem;
-        font-family: PingFang SC;
-        line-height: 1.38rem;
-        width: 14.38rem;
+        &.left-active {
+          height: 46.8vw;
+          width: 100%;
+          margin-right: -50%;
+          z-index: 10;
+          margin-bottom: -23.4vw;
+          cursor: default;
+        }
 
-        &.section_hidden {
+        &.right-active {
+          height: 46.8vw;
+          width: 100%;
+          margin-left: -50%;
+          z-index: 10;
+          margin-bottom: -23.4vw;
+          cursor: default;
+        }
+
+        .story_desc {
+          margin-top: 1.1vw;
+          line-height: 2.2vw;
+          width: 24.4vw;
+          text-align: left;
+          color: #ffffff;
+          font-family: PingFang SC;
+
+          &.section_hidden {
             display: none;
+          }
         }
-        }
-    }
+      }
 
-    .equal-division-item_1 {
-        height: 15.4375rem;
-        width: 50%;
-        margin-left: 0%;
-        background-color: #072e33;
-        position: relative;
-        background-image: url('../../assets/session2@2x.png');
-        // background-size: 100% 100%;
+      .story_3 {
+        height: 23.4vw;
+        padding: 4.3vw 2.7vw 5.4vw;
+        margin-top: 0;
+        background-image: url('../../assets/session3@2x.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        padding: 2.56rem 1.68rem;
         transition: all 0.5s;
         z-index: 3;
-        overflow: hidden;
+        text-align: left;
+        position: relative;
+        font-size: 1.2vw;
 
         &.active {
-        width: 100%;
-        margin-left: -50%;
-        z-index: 10;
-        height: 30.86rem;
-        margin-bottom: -15.5rem;
-        cursor: default;
+          height: 46.8vw;
+          margin-top: -23.4vw;
+          background-size: cover;
+          background-position: 55% 100%;
+          cursor: default;
         }
 
-        .text-wrapper_1 {
-        padding: 0.41rem 0 0.42rem;
-        background-color: #ffffff;
-        border-radius: 0.16rem;
-        width: 5.38rem;
-        .text_7 {
-            color: #000000;
-            font-size: 0.69rem;
-            font-family: PingFang SC;
-            font-weight: 600;
-            line-height: 0.64rem;
-        }
-        }
+        .story3_desc {
+          margin-top: 1.1vw;
+          line-height: 2.2vw;
+          text-align: left;
+          color: #ffffff;
+          font-family: PingFang SC;
+          width: 60%;
 
-        .text_8 {
-        text-align: left;
-        margin-top: 0.73rem;
-        color: #ffffff;
-        font-size: 0.63rem;
-        font-family: PingFang SC;
-        line-height: 1.38rem;
-        width: 14.53rem;
-
-        &.section_hidden {
+          &.section_hidden {
             display: none;
+          }
         }
-        }
-    }
+      }
+
     }
 
     .section-more-icon {
-    margin-top: 1.83rem;
-    background-color: #ffffff;
-    width: 1.91rem;
-    height: 0.36rem;
+      margin-top: 2vw;
+      width: 3.125vw;
+      height: 0.52vw;
 
-    &.section_hidden {
+      &.section_hidden {
         display: none;
+      }
     }
+}
+
+@media screen and (max-width: 1080px) {
+  .web-container {
+    .banner {
+      .image_2 {
+        width: 14rem;
+        height: 5rem;
+      }
+
+      .text_4 {
+        margin-top: 0.7rem;
+        font-size: 3rem;
+      }
     }
+    .story_list {
+      height: 30.81rem;
+      margin-top: 3.53rem;
+      padding: 0 3.47rem;
+      .story_label {
+        height: auto;
+        border-radius: 0.16rem;
+        width: 5.16rem;
+        padding: 0.41rem 0 0.42rem;
+
+        .text_5 {
+          line-height: 0.64rem;
+        }
+      }
+      .story {
+        height: 15.4375rem;
+        padding: 2.56rem 1.68rem 2.96rem;
+        font-size: 0.69rem;
+
+        &.left-active {
+          height: 30.875rem;
+          margin-bottom: -15.4375rem;
+        }
+
+        &.right-active {
+          height: 30.875rem;
+          margin-bottom: -15.4375rem;
+        }
+
+        &.active {
+          height: 30.86rem;
+          margin-bottom: -15.4375rem;
+        }
+        .story_desc {
+          text-align: left;
+          margin-top: 0.73rem;
+          color: #ffffff;
+          line-height: 1.38rem;
+          font-size: 0.63rem;
+          width: 14.38rem;
+        }
+      }
+      .story_3 {
+        padding: 2.61rem 1.66rem 2.94rem;
+        height: 15.4375rem;
+        font-size: 0.69rem;
+        &.active {
+          height: 30.81rem;
+          margin-top: -15.4375rem;
+        }
+      }
+      .story_detail {
+        height: 21rem;
+        flex: 1;
+        font-size: 0.63rem;
+        margin-top: 1.5rem;
+
+        .desc {
+          width: 60%;
+          height: 100%;
+          line-height: 1.38rem;
+          overflow: scroll;
+
+          & > span {
+            &:not(:first-child) {
+              margin-top: 8px;
+            }
+          }
+        }
+
+        .scan_code_wrapper {
+          .scan_image {
+            width: 4.16rem;
+            height: 4.13rem;
+          }
+          .scan_code_title {
+            margin-top: 0.33rem;
+            font-size: 0.63rem;
+          }
+        }
+      }
+      .cloes_active_icon {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.5rem;
+      }
+    }
+    .section-more-icon {
+      margin-top: 1rem;
+      width: 1.91rem;
+      height: 0.36rem;
+    }
+  }
 }
 </style>

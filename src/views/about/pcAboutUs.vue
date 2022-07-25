@@ -1,6 +1,6 @@
 <template>
 <div class="flex-col pc-about-page">
-    <YuanNav />
+    <!-- <YuanNav navTitle="关于我们" /> -->
     <div class="aboutus-content">
     <div class="bg-wrapper">
         <div class="flex-col aboutus-slogin">
@@ -80,10 +80,10 @@
 </template>
 
 <script>
-import YuanNav from '../../components/YuanNav.vue'
+// import YuanNav from '../../components/YuanNav.vue'
 
 export default {
-  components: { YuanNav },
+  // components: { YuanNav },
   data () {
     return {}
   }

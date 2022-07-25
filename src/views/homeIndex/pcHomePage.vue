@@ -1,6 +1,6 @@
 <template>
   <div class="pc-container">
-    <YuanNav />
+    <!-- <YuanNav navTitle="元计划" /> -->
     <div class="flex-col pc-homeindex">
       <div class="flex-col pc-banner">
         <img
@@ -19,12 +19,12 @@
 </template>
 
 <script>
-import YuanNav from '../../components/YuanNav.vue'
+// import YuanNav from '../../components/YuanNav.vue'
 import YuanFooter from '../../components/YuanFooter.vue'
 import Swiper from './swiper.vue'
 
 export default {
-  components: { YuanNav, YuanFooter, Swiper },
+  components: { YuanFooter, Swiper },
   data () {
     return {
     }

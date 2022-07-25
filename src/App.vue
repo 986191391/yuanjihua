@@ -1,27 +1,46 @@
 <template>
   <div id="app">
+    <YuanNav />
     <router-view/>
   </div>
 </template>
 
+<script>
+import YuanNav from './components/YuanNav.vue'
+
+export default {
+  components: { YuanNav },
+  data () {
+    return {
+    }
+  }
+}
+</script>
+
 <style lang="scss">
+body, html {
+  width: 100%;
+  min-height: 100vh;
+}
 
 #app {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
+
 ::-webkit-scrollbar {
   /*隐藏滚轮*/
   display: none;
 }
+
 @media screen and (min-width: 600px) {
   #app {
-    min-width: 900px;
+    min-width: 1080px;
   }
 }
 

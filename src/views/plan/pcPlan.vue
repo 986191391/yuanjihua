@@ -1,6 +1,6 @@
 <template>
   <div class="flex-col pc-plan-page">
-    <YuanNav />
+    <!-- <YuanNav navTitle="流程图" /> -->
     <div class="flex-col plan-content">
       <div class="flex-col plan-banner">
         <div class="flex-col slogin">
@@ -11,12 +11,12 @@
           <span class="plan-slogin">一起建设中国制造的全球共识</span>
         </div>
         <div class="plan-list">
-          <div v-for="(item, index) in planList" :key="item" class="plan-list-item">
+          <div v-for="(item, index) in planList" :key="`listItem${index}`" class="plan-list-item">
             <template v-if="typeof item === 'string'">
               <div class="text_6">{{item}}</div>
             </template>
             <template v-else>
-              <div v-for="(itm, indx) in item" :key="`listItem${indx}`" class="text_6">{{itm}}</div>
+              <div v-for="(itm, indx) in item" :key="`listItemArrItem${indx}`" class="text_6">{{itm}}</div>
             </template>
             <div v-if="index + 1 !== planList.length" style="border-left: 1px dashed #FFF;height:1rem;line-height:1rem; margin: 0 auto" />
           </div>
@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import YuanNav from '../../components/YuanNav.vue'
+// import YuanNav from '../../components/YuanNav.vue'
 import YuanFooter from '../../components/YuanFooter.vue'
 
 export default {
-  components: { YuanNav, YuanFooter },
+  components: { YuanFooter },
   data () {
     return {
       planList: [

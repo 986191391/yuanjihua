@@ -1,11 +1,12 @@
 <template>
   <div class="yuanjihua-nav">
-    <div class="web-nav justify-between nav_container">
+    <div :class="`web-nav justify-between ${isScroll && 'web-nav-scrollbg'}`">
       <img
         src="../assets/logo.png"
         class="nav_active_image"
       />
-      <div class="flex-row nav">
+      <div class="flex-row nav-list">
+        <img class="active-light" :style="{ transform: `translateX(${translateX[active]}rem)` }" src="../assets/highlight.png" alt="" />
         <router-link
           v-for="(item, index) in routeInfo"
           :key="index"
@@ -17,8 +18,11 @@
     </div>
     <div class="pc-nav">
       <i class="nav-icon el-icon-back" @click="() => {this.$router.go(-1)}" />
-      <span class="nav-title">{{navTitle}}</span>
-      <i class="nav-icon el-icon-s-unfold" @click="() => {this.isNavModalShow = !this.isNavModalShow}"/>
+      <span class="nav-title">{{pcNavTitle[active]}}</span>
+      <div class="nav-icon-img" @click="() => {this.isNavModalShow = !this.isNavModalShow}">
+        <img src="../assets/moreIcon.png" />
+      </div>
+      <!-- <i class="nav-icon el-icon-s-unfold" @click="() => {this.isNavModalShow = !this.isNavModalShow}"/> -->
       <div v-if="isNavModalShow" class="nav-list-modal" @click="onPcNavClick">
         <router-link class="nav-list-item" to="/">首页</router-link>
         <router-link class="nav-list-item" to="/about">关于我们</router-link>
@@ -38,6 +42,7 @@ export default {
   },
   data () {
     return {
+      isScroll: false,
       active: 0,
       routeInfo: [
         {
@@ -58,15 +63,41 @@ export default {
           active: 3
         }
       ],
+      translateX: [3.3, 8.8, 14.5, 20.2],
+      pcNavTitle: ['元计划', '关于我们', '规划图'],
       navRelate: {
         homeIndex: 0,
         about: 1,
         plan: 2
       },
-      isNavModalShow: false
+      isNavModalShow: false,
+      scrollThrottle: this.debounce(this.handleScroll, 10)
     }
   },
+  mounted () {
+    if (screen.width > 600) window.addEventListener('scroll', this.scrollThrottle) // 监听页面滚动
+  },
+  destroyed () {
+    if (screen.width > 600) window.removeEventListener('scroll', this.scrollThrottle) // 销毁滚动事件
+  },
   methods: {
+    handleScroll () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      this.isScroll = scrollTop > 0
+    },
+    debounce (fn, delay) {
+      var timer // 维护一个 timer
+      return function () {
+        var _this = this // 取debounce执行作用域的this
+        var args = arguments
+        if (timer) {
+          clearTimeout(timer)
+        }
+        timer = setTimeout(function () {
+          fn.apply(_this, args) // 用apply指向调用debounce的对象，相当于_this.fn(args);
+        }, delay)
+      }
+    },
     onPcNavClick () {
     }
   },
@@ -85,26 +116,39 @@ export default {
 
 <style scoped lang="scss">
   .yuanjihua-nav {
+    width: 100%;
     z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .web-nav {
-    padding: 0 5rem;
+    padding: 0 8vw;
     height: 60px;
-    background-image: linear-gradient(180deg, #00000080 25.5%, #00000000 100%);
+    background: transparent;
+
+    &.web-nav-scrollbg {
+      background-color: #000;
+    }
 
     .nav_active_image {
-      margin-top: 0.5rem;
       align-self: center;
       width: 6.28rem;
       height: 2.19rem;
     }
 
-    .nav {
+    .nav-list {
       margin-right: 0.53rem;
 
+      .active-light {
+        width: 30px;
+        height: 15px;
+        transition: all 0.3s;
+      }
+
       .nav-item {
-        margin: 0 0.8rem;
+        margin: 0 1.3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -112,11 +156,9 @@ export default {
         justify-content: center;
 
         &.nav-active {
-          background-image: url('../assets/highlight.png');
-          background-size: 30px 15px;
-          background-position: 50% 0;
-          background-repeat: no-repeat;
-          font-weight: bold;
+          & > .text {
+            font-weight: 350;
+          }
         }
 
         .high-light-img {
@@ -132,10 +174,10 @@ export default {
       .text {
         align-self: center;
         color: #ffffff;
-        font-size: 22px;
         font-family: PingFang SC;
         font-weight: 200;
         line-height: 0.75rem;
+        font-size: 0.9rem;
       }
     }
   }
@@ -148,10 +190,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    position: relative;
-    position: fixed;
-    top: 0;
-    left: 0;
 
     .nav-icon {
       width: 44px;
@@ -161,6 +199,20 @@ export default {
       align-items: center;
       font-size: 1.3rem;
       cursor: pointer;
+    }
+
+    .nav-icon-img {
+      padding: 10px;
+      width: 44px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > img {
+        width: 20px;
+        height: 20px;
+      }
     }
 
     .nav-list-modal {
@@ -178,8 +230,9 @@ export default {
       .nav-list-item {
         width: 100%;
         height: 45px;
+        padding: 0 15px;
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         text-decoration: none;
         color: #000;
@@ -188,6 +241,13 @@ export default {
           border-bottom: 1px solid #eee;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .web-nav {
+      min-width: 1080px;
+      padding: 0 5rem;
     }
   }
 
@@ -204,6 +264,9 @@ export default {
 
   @media screen and (max-width: 600px) {
     .yuanjihua-nav {
+      position: sticky;
+      top: 0;
+
       .web-nav {
         display: none;
       }
