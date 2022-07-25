@@ -3,7 +3,7 @@
     <!-- <YuanNav navTitle="元计划" /> -->
     <div class="flex-col pc-homeindex">
        <video  autoplay='autoplay' loop="loop">
-        <source src="../../assets/pc/移动端 竖版白t.mp4" type="video/mp4">
+        <source src="https://yuanjihua111.oss-cn-hangzhou.aliyuncs.com/%E7%A7%BB%E5%8A%A8%E7%AB%AF%20%E7%AB%96%E7%89%88%E7%99%BDt.mp4" type="video/mp4">
        </video>
       <!-- <div class="flex-col pc-banner">
         <img
