@@ -1,13 +1,17 @@
 <template>
   <div class="web-container">
     <div class="items-center justify-center banner">
-      <div class="flex-col items-center">
+      <video  autoplay='autoplay' loop="loop">
+        <source src="../../assets/pc/pc端横版白t.mp4" type="video/mp4">
+       </video>
+      <!-- <div class="flex-col items-center">
         <img
           src="../../assets/logo.png"
           class="image_2"
         />
         <span class="text_4">一起建设中国制造的全球共识</span>
-      </div>
+
+      </div> -->
     </div>
     <div class="flex-col story_list">
       <div class="flex-row">

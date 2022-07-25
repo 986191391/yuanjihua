@@ -2,7 +2,10 @@
   <div class="pc-container">
     <!-- <YuanNav navTitle="元计划" /> -->
     <div class="flex-col pc-homeindex">
-      <div class="flex-col pc-banner">
+       <video  autoplay='autoplay' loop="loop">
+        <source src="../../assets/pc/移动端 竖版白t.mp4" type="video/mp4">
+       </video>
+      <!-- <div class="flex-col pc-banner">
         <img
           src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62cebae603330d00110d3d2c//16578082901556610546.png"
           class="image_5"
@@ -11,7 +14,7 @@
           <span class="slogin_1">一起建设</span>
           <span class="slogin_2">中国制造的全球共识</span>
         </div>
-      </div>
+      </div> -->
       <Swiper class="custom-swiper" />
     </div>
     <YuanFooter />
