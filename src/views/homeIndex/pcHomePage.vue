@@ -1,16 +1,23 @@
 <template>
   <div class="pc-container">
     <div class="flex-col pc-homeindex">
-      <!-- <video
-        muted=""
+      <video
+        v-if="!isAndroid"
+        ref="video"
+        muted
+        poster="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.mp4?x-oss-process=video/snapshot,t_100,f_jpg,w_750,h_1000,m_fast"
         loop="loop"
         autoplay="autoplay"
-        src="../../assets/mobileVedio.mp4"
+        src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.mp4"
         class="flex-col pc-banner"
         id="video-home"
+        playsinline
+        webkit-playsinline="true"
+        x5-video-player-type="h5"
         data-object-fit=""
-      /> -->
-      <div class="flex-col pc-banner" />
+        preload="auto"
+      />
+      <div v-else class="flex-col pc-banner" />
       <Swiper class="custom-swiper" />
     </div>
     <YuanFooter />
@@ -25,7 +32,18 @@ export default {
   components: { YuanFooter, Swiper },
   data () {
     return {
+      isAndroid: navigator.userAgent.toLowerCase().indexOf('android') > -1
     }
+  },
+  mounted () {
+    const that = this
+    document.addEventListener('touchstart', () => {
+      that.$refs.video.play()
+    }, false)
+    // 必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+    document.addEventListener('WeixinJSBridgeReady', function () {
+      that.$refs.video.play()
+    }, false)
   }
 }
 </script>
@@ -40,7 +58,7 @@ export default {
       .pc-banner {
         height: 35rem;
         // padding: 6.81rem 0 17.63rem;
-        background-image: url('../../assets/mobilebg.gif');
+        background-image: url("https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center cover;

@@ -1,14 +1,23 @@
 <template>
   <div class="web-container">
-    <video
-      muted=""
+     <video
       loop="loop"
+      v-if="!isAndroid"
+      ref="video"
       autoplay="autoplay"
-      src="../../assets/vediopc.mp4"
+      src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_pc.mp4"
+      poster="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_pc.mp4?x-oss-process=video/snapshot,t_100,f_jpg,w_750,h_1000,m_fast"
       class="items-center justify-center banner"
       id="video-home"
       data-object-fit=""
+      playsinline
+      muted
+      x5-playsinline
+      webkit-playsinline="true"
+      x5-video-player-type="h5"
+      preload="auto"
     />
+     <img v-else class="items-center justify-center banner" src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_pc.webp"/>
     <div class="flex-col story_list">
       <div class="flex-row">
         <div :class="`flex-col story left-story ${sectionActive === 1 && 'left-active'}`" @click="(e) => setSectionActive(e, 1)">
@@ -137,8 +146,19 @@ export default {
     return {
       sectionActive: false,
       currentIndex: 0,
-      timer: null
+      timer: null,
+      isAndroid: navigator.userAgent.toLowerCase().indexOf('android') > -1
     }
+  },
+  mounted () {
+    const that = this
+    document.addEventListener('touchstart', () => {
+      that.$refs.video.play()
+    }, false)
+    // 必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+    document.addEventListener('WeixinJSBridgeReady', function () {
+      that.$refs.video.play()
+    }, false)
   },
   methods: {
     setSectionActive (e, activeIndex) {
@@ -314,7 +334,7 @@ export default {
           text-align: left;
           color: #ffffff;
           font-family: PingFang SC;
-
+          text-indent: 2em;
           &.section_hidden {
             display: none;
           }
@@ -334,7 +354,6 @@ export default {
         text-align: left;
         position: relative;
         font-size: 1.2vw;
-
         &.active {
           height: 46.8vw;
           margin-top: -23.4vw;
@@ -350,7 +369,7 @@ export default {
           color: #ffffff;
           font-family: PingFang SC;
           width: 60%;
-
+          text-indent: 2em;
           &.section_hidden {
             display: none;
           }
