@@ -40,7 +40,7 @@ export default {
       .pc-banner {
         height: 35rem;
         // padding: 6.81rem 0 17.63rem;
-        background-image: url('../../assets/mobilebg.webp');
+        background-image: url('../../assets/mobilebg.gif');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center cover;
