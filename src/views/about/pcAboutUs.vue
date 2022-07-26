@@ -103,7 +103,7 @@ height: 100%;
 
     .bg-wrapper {
     padding: 4rem 1rem 0 1rem;
-    background-image: url('../../assets/pc/aboutus/aboutusbg.png');
+    background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/pc/aboutus/aboutusbg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;

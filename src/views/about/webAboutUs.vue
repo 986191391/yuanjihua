@@ -40,7 +40,7 @@
               <span class="contactus_label_font">联系我们</span>
             </div>
             <img
-              src="../../assets/about/yuanLabelIcon.png"
+              src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/yuanLabelIcon.png"
               class="brand_image"
             />
           </div>
@@ -48,14 +48,14 @@
             <div class="flex-row scan-wrapper">
               <div class="flex-col items-center">
                 <img
-                  src="../../assets/about/yuanAccount.png"
+                  src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/yuanAccount.png"
                   class="scan_image"
                 />
                 <span class="scan_desc">元计划公众号</span>
               </div>
               <div class="flex-col items-start we_chat">
                 <img
-                  src="../../assets/about/wechatScan.png"
+                  src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/wechatScan.png"
                   class="scan_image"
                 />
                 <span class="scan_desc">客服微信</span>
@@ -64,7 +64,7 @@
             <div class="flex-col address_email">
               <div class="flex-row items-center yuan_email_label">
                 <img
-                  src="../../assets/about/emailIcon.png"
+                  src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/emailIcon.png"
                   class="contact_icon"
                 />
                 <span>合作邮箱</span>
@@ -72,7 +72,7 @@
               <span class="yuan_email">caijingya@xingzhe.team</span>
               <div class="flex-row items-center yuan_address_label">
                 <img
-                  src="../../assets/about/addressIcon.png"
+                  src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/addressIcon.png"
                   class="contact_icon"
                 />
                 <span>公司地址</span>
@@ -130,7 +130,7 @@ export default {
 
   .about-banner {
     height: 56vw;
-    background-image: url('../../assets/about/aboutbanner@2x.png');
+    background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/aboutbanner@2x.png');
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
@@ -181,7 +181,7 @@ export default {
 
   .footer-address {
     margin-top: 13vw;
-    background-image: url('../../assets/about/footerBg.png');
+    background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/footerBg.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3.4vw 5.7vw;
@@ -196,7 +196,7 @@ export default {
         .address_position {
           width: 46.6vw;
           height: 100%;
-          background-image: url('../../assets/about/address.png');
+          background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/address.png');
           background-size: 100% 100%;
           background-repeat: no-repeat;
         }
@@ -207,7 +207,7 @@ export default {
           height: 100%;
           flex: 1 1 auto;
           background-color: #000000;
-          background-image: url('../../assets/about/footeryuan.png');
+          background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/about/footeryuan.png');
           background-size: contain;
           background-repeat: no-repeat;
           background-position: right bottom;

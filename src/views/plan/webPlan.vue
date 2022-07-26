@@ -84,7 +84,7 @@ export default {
 
   .plan-banner {
     height: 56vw;
-    background-image: url('../../assets/plan/bannertop.png');
+    background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/plan/bannertop.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -186,7 +186,7 @@ export default {
   .footer-bg {
     margin-top: -38.3vw;
     padding: 58vw 0 1vw;
-    background-image: url('../../assets/plan/footerbg.png');
+    background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/plan/footerbg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -199,7 +199,7 @@ export default {
 
     .plan-banner {
       padding: 12rem 0 25.28rem;
-      background-image: url('../../assets/plan/bannertop.png');
+      background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/plan/bannertop.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -306,7 +306,7 @@ export default {
     .footer-bg {
       margin-top: -25rem;
       padding: 37.28rem 0 1rem;
-      background-image: url('../../assets/plan/footerbg.png');
+      background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/plan/footerbg.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;

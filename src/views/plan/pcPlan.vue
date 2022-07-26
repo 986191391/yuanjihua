@@ -63,7 +63,7 @@ export default {
 <style scoped lang="scss">
 .pc-plan-page{
   .plan-content{
-    background-image: url('../../assets/plan/pcbg.png');
+    background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/plan/pcbg.png');
     background-size: cover;
     background-position: center center;
     min-height: 100vh;

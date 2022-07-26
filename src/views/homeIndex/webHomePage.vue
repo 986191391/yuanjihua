@@ -6,7 +6,7 @@
       ref="video"
       autoplay="autoplay"
       src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_pc.mp4"
-      poster="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_pc.mp4?x-oss-process=video/snapshot,t_100,f_jpg,w_750,h_1000,m_fast"
+      poster="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_pc.mp4?x-oss-process=video/snapshot,t_100,f_jpg,w_1920,h_1080,m_fast"
       class="items-center justify-center banner"
       id="video-home"
       data-object-fit=""
@@ -47,13 +47,13 @@
             </div>
             <div class="flex-col items-center scan_code_wrapper">
               <img
-                src="../../assets/scan.png"
+                src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/scan.png"
                 class="scan_image"
               />
               <span class="scan_code_title">元计划公众号</span>
             </div>
           </div>
-          <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 1 && 'section_hidden'}`" />
+          <img src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 1 && 'section_hidden'}`" />
         </div>
         <div :class="`flex-col story right-story ${sectionActive === 2 && 'right-active'}`" @click="(e) => setSectionActive(e, 2)">
           <div class="flex-col items-center story_label"><span class="text_5">第二章 · 起缘</span></div>
@@ -82,13 +82,13 @@
             </div>
             <div class="flex-col items-center scan_code_wrapper">
               <img
-                src="../../assets/scan.png"
+                src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/scan.png"
                 class="scan_image"
               />
               <span class="scan_code_title">元计划公众号</span>
             </div>
           </div>
-          <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 2 && 'section_hidden'}`" />
+          <img src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 2 && 'section_hidden'}`" />
         </div>
       </div>
       <div :class="`flex-col story_3 ${sectionActive === 3 && 'active'}`" @click="(e) => setSectionActive(e, 3)">
@@ -124,13 +124,13 @@
           </div>
           <div class="flex-col items-center scan_code_wrapper">
             <img
-              src="../../assets/scan.png"
+              src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/scan.png"
               class="scan_image"
             />
             <span class="scan_code_title">元计划公众号</span>
           </div>
         </div>
-        <img src="../../assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 3 && 'section_hidden'}`" />
+        <img src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/rightImg.png" :class="`section-more-icon  ${sectionActive === 3 && 'section_hidden'}`" />
       </div>
     </div>
     <YuanFooter />
@@ -302,11 +302,11 @@ export default {
         font-size: 1.2vw;
 
         &.left-story {
-          background-image: url('../../assets/session1@2x.png');
+          background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/session1@2x.png');
         }
 
         &.right-story {
-          background-image: url('../../assets/session2@2x.png');
+          background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/session2@2x.png');
         }
 
         &.left-active {
@@ -345,7 +345,7 @@ export default {
         height: 23.4vw;
         padding: 4.3vw 2.7vw 5.4vw;
         margin-top: 0;
-        background-image: url('../../assets/session3@2x.png');
+        background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/session3@2x.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;

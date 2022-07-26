@@ -57,11 +57,12 @@ export default {
           title: '规划图',
           path: '/plan',
           active: 2
-        }, {
-          title: '图例展示',
-          path: '/',
-          active: 3
         }
+        // {
+        //   title: '图例展示',
+        //   path: '/',
+        //   active: 3
+        // }
       ],
       translateX: [3.3, 8.8, 14.5, 20.2],
       pcNavTitle: ['元计划', '关于我们', '规划图'],
