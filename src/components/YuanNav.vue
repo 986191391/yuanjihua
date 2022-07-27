@@ -16,17 +16,18 @@
         </router-link>
       </div>
     </div>
-    <div class="pc-nav">
+    <div class="mobile-nav">
       <i class="nav-icon el-icon-back" @click="() => {this.$router.go(-1)}" />
       <span class="nav-title">{{pcNavTitle[active]}}</span>
       <div class="nav-icon-img" @click="() => {this.isNavModalShow = !this.isNavModalShow}">
         <img src="../assets/moreIcon.png" />
       </div>
-      <!-- <i class="nav-icon el-icon-s-unfold" @click="() => {this.isNavModalShow = !this.isNavModalShow}"/> -->
       <div v-if="isNavModalShow" class="nav-list-modal" @click="onPcNavClick">
         <router-link class="nav-list-item" to="/">首页</router-link>
         <router-link class="nav-list-item" to="/about">关于我们</router-link>
         <router-link class="nav-list-item" to="/plan">规划图</router-link>
+        <a class="nav-list-item" @click="navClick">图例展示</a>
+        <a class="nav-list-item" @click="navClick">登录</a>
       </div>
     </div>
   </div>
@@ -82,6 +83,14 @@ export default {
     if (screen.width > 600) window.removeEventListener('scroll', this.scrollThrottle) // 销毁滚动事件
   },
   methods: {
+    navClick () {
+      this.isNavModalShow = false
+      this.$message({
+        message: '即将开放!',
+        duration: 1000,
+        customClass: 'mobile-message'
+      })
+    },
     handleScroll () {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       this.isScroll = scrollTop > 0
@@ -183,7 +192,7 @@ export default {
     }
   }
 
-  .pc-nav {
+  .mobile-nav {
     padding: 0 5px;
     height: 44px;
     width: 100%;
@@ -218,7 +227,6 @@ export default {
 
     .nav-list-modal {
       width: 100px;
-      height: 135px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -257,7 +265,7 @@ export default {
       .web-nav {
         display: flex;
       }
-      .pc-nav {
+      .mobile-nav {
         display: none;
       }
     }
@@ -271,7 +279,7 @@ export default {
       .web-nav {
         display: none;
       }
-      .pc-nav {
+      .mobile-nav {
         display: flex;
       }
     }

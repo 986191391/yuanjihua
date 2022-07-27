@@ -38,6 +38,11 @@ body, html {
   display: none;
 }
 
+.mobile-message {
+  min-width: auto !important;
+  top: 60px !important;
+}
+
 @media screen and (min-width: 600px) {
   #app {
     min-width: 1080px;
@@ -50,22 +55,9 @@ body, html {
   }
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-
-    /************************************************************
-  ** 请将全局样式拷贝到项目的全局 CSS 文件或者当前页面的顶部 **
-  ** 否则页面将无法正常显示                                  **
+ /************************************************************
+  ** 全局样式**
+  ** 不能删除否则页面将无法正常显示                                  **
   ************************************************************/
 
   html {
