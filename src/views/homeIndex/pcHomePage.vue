@@ -17,7 +17,7 @@
         data-object-fit=""
         preload="auto"
       />
-      <div v-else class="flex-col pc-banner" />
+      <div v-else class="flex-col pc-banner bg-video" />
       <Swiper class="custom-swiper" />
     </div>
     <YuanFooter />
@@ -58,12 +58,14 @@ export default {
       .pc-banner {
         height: 35rem;
         // padding: 6.81rem 0 17.63rem;
-        background-image: url("https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.webp");
+        // background-image: url("https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center cover;
         position: relative;
-
+        &.bg-video{
+          background-image: url("https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.webp");
+        }
         &::before {
           position: absolute;
           top: 0;
