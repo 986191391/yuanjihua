@@ -155,7 +155,7 @@ export default {
     font-size: 1vw;
     line-height: 1.5vw;
     font-family: PingFang SC;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
     & > span:not(:first-child) {
       margin-top: 1.5vw;
     }
@@ -173,6 +173,7 @@ export default {
     font-family: PingFang SC;
     line-height: 1.5vw;
     align-self: center;
+    letter-spacing: 0.1vw;
 
     & > span:last-child {
       margin-top: 1.5vw;

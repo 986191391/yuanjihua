@@ -22,7 +22,7 @@
         <div class="flex-col view_1">
         <div class="flex-col items-start group_3">
             <span class="text">about us</span>
-            <span class="text_2">关于我们</span>
+            <span class="text_2">企业文化</span>
         </div>
         <span class="text_10">一起建设中国制造的全球共识</span>
         </div>
