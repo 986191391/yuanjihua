@@ -57,6 +57,11 @@ export default {
     .pc-homeindex {
       .pc-banner {
         height: 35rem;
+        // padding: 6.81rem 0 17.63rem;
+        background-image: url("https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center cover;
         position: relative;
 
         &::before {
