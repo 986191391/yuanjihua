@@ -143,7 +143,7 @@ height: 100%;
         line-height: 1.25rem;
     }
     .text_8 {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         color: #ffffff;
         font-size: 0.63rem;
         font-family: PingFang SC;
