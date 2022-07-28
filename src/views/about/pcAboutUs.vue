@@ -90,7 +90,7 @@ export default {
 
 <style scoped lang="scss">
 .pc-about-page {
-padding: 0 0 3rem;
+padding: 0 0 48px;
 background-color: #000000;
 width: 100%;
 overflow-y: auto;
@@ -102,7 +102,7 @@ height: 100%;
     flex-direction: column;
 
     .bg-wrapper {
-    padding: 4rem 1rem 0 1rem;
+    padding: 64px 16px 0 16px;
     background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/pc/aboutus/aboutusbg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -113,176 +113,176 @@ height: 100%;
         text-align: center;
 
         .group_1 {
-            padding-top: 1rem;
-            height: 2.31rem;
+            padding-top: 16px;
+            height: 36.96px;
             position: relative;
         }
         .text_4 {
-            margin-top: 0.66rem;
+            margin-top: 10.56px;
             color: #ffffff;
-            font-size: 1rem;
+            font-size: 16px;
             font-family: PingFang SC;
-            line-height: 0.94rem;
-            letter-spacing: 0.3rem;
+            line-height: 15.04px;
+            letter-spacing: 4.8px;
         }
     }
     .text_6 {
-        margin-top: 3.19rem;
+        margin-top: 51.04px;
         align-self: center;
         color: #ffffff;
-        font-size: 0.63rem;
+        font-size: 10.08px;
         font-family: PingFang SC;
-        line-height: 1.25rem;
+        line-height: 20px;
     }
 
     .text_7 {
-        margin-top: 1.25rem;
+        margin-top: 20px;
         color: #ffffff;
-        font-size: 0.63rem;
+        font-size: 10.08px;
         font-family: PingFang SC;
-        line-height: 1.25rem;
+        line-height: 20px;
     }
     .text_8 {
-        margin-top: 2rem;
+        margin-top: 32px;
         color: #ffffff;
-        font-size: 0.63rem;
+        font-size: 10.08px;
         font-family: PingFang SC;
-        line-height: 1.25rem;
+        line-height: 20px;
     }
     }
 
     .other-wrapper {
-    padding: 0 1rem;
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
 
     .view_1 {
-        margin-top: 4.91rem;
+        margin-top: 78.56px;
         text-align: center;
 
         .text_10 {
-        margin-top: 0.66rem;
+        margin-top: 10.56px;
         color: #ffffff;
-        font-size: 1rem;
+        font-size: 16px;
         font-family: PingFang SC;
-        line-height: 0.94rem;
-        letter-spacing: 0.3rem;
+        line-height: 15.04px;
+        letter-spacing: 4.8px;
         }
     }
     .text_12 {
-        margin-top: 3.19rem;
+        margin-top: 51.04px;
         color: #ffffff;
-        font-size: 0.63rem;
+        font-size: 10.08px;
         font-family: PingFang SC;
-        line-height: 1.25rem;
+        line-height: 20px;
     }
     .text_13 {
-        margin-top: 1.25rem;
+        margin-top: 20px;
         color: #ffffff;
-        font-size: 0.63rem;
+        font-size: 10.08px;
         font-family: PingFang SC;
-        line-height: 1.25rem;
+        line-height: 20px;
     }
     .view_3 {
-        margin-top: 4.91rem;
+        margin-top: 78.56px;
         text-align: center;
     }
     .group_5 {
-        margin-top: 2.22rem;
-        padding-left: 5.56rem;
-        padding-right: 5.53rem;
+        margin-top: 35.52px;
+        padding-left: 88.96px;
+        padding-right: 88.48px;
         .image {
-        width: 4.53rem;
-        height: 4.47rem;
+        width: 72.48px;
+        height: 71.52px;
         }
         .text_16 {
-        margin-top: 0.41rem;
+        margin-top: 6.56px;
         color: #ffffff;
-        font-size: 0.75rem;
+        font-size: 12px;
         font-family: PingFang SC;
-        line-height: 0.69rem;
+        line-height: 11.04px;
         }
         .text_17 {
-        margin-top: 0.41rem;
+        margin-top: 6.56px;
         color: #ffffff;
-        font-size: 0.75rem;
+        font-size: 12px;
         font-family: PingFang SC;
-        line-height: 0.69rem;
+        line-height: 11.04px;
         }
     }
     .group_9 {
-        margin-top: 1.88rem;
+        margin-top: 30.08px;
         .group_12 {
-        margin-top: 1.59rem;
+        margin-top: 25.44px;
         align-self: center;
-        width: 18.75rem;
+        width: 300px;
         .text_21 {
-            margin-top: 0.81rem;
+            margin-top: 12.96px;
             color: #ffffff;
-            font-size: 0.75rem;
+            font-size: 12px;
             font-family: PingFang SC;
-            line-height: 0.88rem;
-            letter-spacing: 0.075rem;
+            line-height: 14.08px;
+            letter-spacing: 1.2px;
             text-align: center;
         }
         .text_20 {
-            margin: 0.19rem 0 0.16rem 0.5rem;
+            margin: 3.04px 0 2.56px 8px;
             color: #ffffff;
-            font-size: 1rem;
+            font-size: 16px;
             font-family: PingFang SC;
             font-weight: 600;
-            line-height: 0.94rem;
-            letter-spacing: 0.1rem;
+            line-height: 15.04px;
+            letter-spacing: 1.6px;
         }
         }
         .group_11 {
-        padding: 0 1.78rem;
+        padding: 0 28.48px;
         .text_18 {
-            margin: 0.16rem 0.59rem 0.16rem 0.47rem;
+            margin: 2.56px 9.44px 2.56px 7.52px;
             color: #ffffff;
-            font-size: 1rem;
+            font-size: 16px;
             font-family: PingFang SC;
             font-weight: 600;
-            line-height: 0.94rem;
-            letter-spacing: 0.1rem;
+            line-height: 15.04px;
+            letter-spacing: 1.6px;
         }
         }
         .text_19 {
-        margin-top: 0.5rem;
+        margin-top: 8px;
         color: #ffffff;
-        font-size: 0.75rem;
+        font-size: 12px;
         font-family: PingFang SC;
-        line-height: 0.72rem;
-        letter-spacing: 0.075rem;
+        line-height: 11.52px;
+        letter-spacing: 1.2px;
         }
         .image_2 {
-        width: 1.25rem;
-        height: 1.25rem;
+        width: 20px;
+        height: 20px;
         }
     }
     .group_3 {
-        padding-top: 1rem;
+        padding-top: 16px;
         position: relative;
     }
     }
 
     .text {
     color: #ffffff1a;
-    font-size: 1.65rem;
+    font-size: 26.4px;
     font-family: PingFang SC;
     font-weight: 600;
-    line-height: 1.31rem;
-    letter-spacing: 1.05rem;
+    line-height: 20.96px;
+    letter-spacing: 16.8px;
     text-transform: uppercase;
     width: 100%;
     }
 
     .text_2 {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 32px;
     font-family: PingFang SC;
     font-weight: 600;
-    line-height: 1.88rem;
+    line-height: 30.08px;
     position: absolute;
     top: 0;
     left: 50%;

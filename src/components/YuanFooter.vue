@@ -23,12 +23,12 @@ export default {
 <style scoped lang="scss">
   .yuanjihua-footer {
     .web-footer {
-      padding: 1.5rem 0;
+      padding: 24px 0;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 0.63rem;
+      font-size: 10.08px;
       color: #fff;
     }
 
@@ -37,7 +37,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: 0.63rem;
+      font-size: 10.08px;
       color: #fff;
     }
   }

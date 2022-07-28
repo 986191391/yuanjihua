@@ -56,8 +56,8 @@ export default {
 
     .pc-homeindex {
       .pc-banner {
-        height: 35rem;
-        // padding: 6.81rem 0 17.63rem;
+        height: 560px;
+        // padding: 108.96px 0 282.08px;
         // background-image: url("https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.webp");
         background-repeat: no-repeat;
         background-size: cover;
@@ -78,29 +78,28 @@ export default {
       }
 
       .custom-swiper {
-        margin-top: -10rem;
+        margin-top: -160px;
       }
 
       .slogin {
-          margin-top: 2rem;
-
+          margin-top: 32px;
           .slogin_1 {
           color: #ffffff;
-          font-size: 2.13rem;
+          font-size: 34.08px;
           font-family: Microsoft YaHei;
           font-weight: 700;
-          line-height: 2.56rem;
-          letter-spacing: 0.11rem;
+          line-height: 40.96px;
+          letter-spacing: 1.76px;
           }
 
           .slogin_2 {
-          margin-top: 0.25rem;
+          margin-top: 4px;
           color: #ffffff;
-          font-size: 2.13rem;
+          font-size: 34.08px;
           font-family: Microsoft YaHei;
           font-weight: 700;
-          line-height: 2.56rem;
-          letter-spacing: 0.11rem;
+          line-height: 40.96px;
+          letter-spacing: 1.76px;
           }
       }
     }

@@ -198,33 +198,33 @@ export default {
     min-width: 1080px;
 
     .plan-banner {
-      padding: 12rem 0 25.28rem;
+      padding: 192px 0 404.48px;
       background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/plan/bannertop.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
 
       .plan_label {
-        padding-top: 1.09rem;
-        height: 2.67rem;
+        padding-top: 17.44px;
+        height: 42.72px;
         position: relative;
 
         .plan_label_bg {
           color: rgba(255, 255, 255, 0.1019607843);
-          font-size: 2.13rem;
+          font-size: 34.08px;
           font-family: PingFang SC;
           font-weight: 600;
-          line-height: 1.58rem;
-          letter-spacing: 1.7rem;
+          line-height: 25.28px;
+          letter-spacing: 27.2px;
           text-transform: uppercase;
         }
 
         .plan_label_title {
           color: #ffffff;
-          font-size: 2.13rem;
+          font-size: 34.08px;
           font-family: PingFang SC;
           font-weight: 600;
-          line-height: 1.98rem;
+          line-height: 31.68px;
           position: absolute;
           top: 0;
           left: 50%;
@@ -233,13 +233,13 @@ export default {
       }
 
       .plan-slogin {
-        margin-top: 1rem;
+        margin-top: 16px;
         align-self: center;
         color: #ffffff;
-        font-size: 1.03rem;
+        font-size: 16.48px;
         font-family: PingFang SC;
-        line-height: 0.95rem;
-        letter-spacing: 0.82rem;
+        line-height: 15.2px;
+        letter-spacing: 13.12px;
       }
     }
 
@@ -247,7 +247,7 @@ export default {
       width: 100%;
       color: #fff;
       font-size: 14px;
-      margin-top: -18rem;
+      margin-top: -288px;
       z-index: 1;
       position: relative;
 
@@ -304,8 +304,8 @@ export default {
     }
 
     .footer-bg {
-      margin-top: -25rem;
-      padding: 37.28rem 0 1rem;
+      margin-top: -400px;
+      padding: 596.48px 0 16px;
       background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/plan/footerbg.png');
       background-repeat: no-repeat;
       background-size: cover;

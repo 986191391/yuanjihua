@@ -18,7 +18,7 @@
             <template v-else>
               <div v-for="(itm, indx) in item" :key="`listItemArrItem${indx}`" class="text_6">{{itm}}</div>
             </template>
-            <div v-if="index + 1 !== planList.length" style="border-left: 1px dashed #FFF;height:1rem;line-height:1rem; margin: 0 auto" />
+            <div v-if="index + 1 !== planList.length" style="border-left: 1px dashed #FFF;height:16px;line-height:16px; margin: 0 auto" />
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@ export default {
     min-height: 100vh;
 
     .plan-banner {
-      padding: 4rem 1rem 4rem 1rem;
+      padding: 64px 16px 64px 16px;
 
       .text_6{
         font-style: normal;
@@ -77,32 +77,32 @@ export default {
         text-align: center;
         margin-bottom: 5px;
         color: #ffffff;
-        font-size: 0.63rem;
+        font-size: 10.08px;
         font-family: PingFang SC;
       }
       .slogin {
         .plan-label {
-          padding-top: 1.09rem;
-          height: 2.67rem;
+          padding-top: 17.44px;
+          height: 42.72px;
           position: relative;
 
           .text {
             color: #ffffff1a;
-            font-size: 1.65rem;
+            font-size: 26.4px;
             font-family: PingFang SC;
             font-weight: 600;
-            line-height: 1.31rem;
-            letter-spacing: 1.05rem;
+            line-height: 20.96px;
+            letter-spacing: 16.8px;
             text-transform: uppercase;
             width: 100%;
           }
 
           .text_2 {
             color: #ffffff;
-            font-size: 2rem;
+            font-size: 32px;
             font-family: PingFang SC;
             font-weight: 600;
-            line-height: 1.88rem;
+            line-height: 30.08px;
             position: absolute;
             top: 0;
             left: 50%;
@@ -110,16 +110,16 @@ export default {
           }
         }
         .plan-slogin {
-          margin-top: 0.66rem;
+          margin-top: 10.56px;
           color: #ffffff;
-          font-size: 1rem;
+          font-size: 16px;
           font-family: PingFang SC;
-          line-height: 0.94rem;
-          letter-spacing: 0.3rem;
+          line-height: 15.04px;
+          letter-spacing: 4.8px;
         }
       }
       .plan-list {
-        margin-top: 4rem;
+        margin-top: 64px;
 
         .plan-list-item{
           padding: 5px 0;
@@ -128,9 +128,9 @@ export default {
           flex-direction: column;
         }
         .border{
-          width: 0.16rem;
+          width: 2.56px;
           height: 0px;
-          border: 0.05rem dashed #FFFFFF;
+          border: 0.8px dashed #FFFFFF;
           transform: rotate(90deg);
           margin: auto;
         }

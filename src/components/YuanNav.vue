@@ -144,12 +144,12 @@ export default {
 
     .nav_active_image {
       align-self: center;
-      width: 6.28rem;
-      height: 2.19rem;
+      width: 100.48px;
+      height: 35.04px;
     }
 
     .nav-list {
-      margin-right: 0.53rem;
+      margin-right: 8.48px;
 
       .active-light {
         width: 30px;
@@ -158,7 +158,7 @@ export default {
       }
 
       .nav-item {
-        margin: 0 1.3rem;
+        margin: 0 20.8px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -172,12 +172,12 @@ export default {
         }
 
         .high-light-img {
-          width: 2.09rem;
-          height: 1.03rem;
+          width: 33.44px;
+          height: 16.48px;
         }
 
         & > span {
-          min-width: 2.09rem;
+          min-width: 33.44px;
         }
       }
 
@@ -186,8 +186,8 @@ export default {
         color: #ffffff;
         font-family: PingFang SC;
         font-weight: 200;
-        line-height: 0.75rem;
-        font-size: 0.9rem;
+        line-height: 12px;
+        font-size: 14.4px;
       }
     }
   }
@@ -207,7 +207,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.3rem;
+      font-size: 20.8px;
       cursor: pointer;
     }
 
@@ -256,7 +256,7 @@ export default {
   @media screen and (max-width: 1080px) {
     .web-nav {
       min-width: 1080px;
-      padding: 0 5rem;
+      padding: 0 80px;
     }
   }
 

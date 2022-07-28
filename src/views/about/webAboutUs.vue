@@ -277,7 +277,7 @@ export default {
               color: #ffffff;
               font-size: 1vw;
               font-family: PingFang SC;
-              letter-spacing: 0.08rem;
+              letter-spacing: 1.28px;
                 line-height: 1.5vw;
 
               .yuan_email_label {
@@ -317,14 +317,14 @@ export default {
     min-width: 1080px;
 
     .desc-label {
-      padding-top: 1.09rem;
-      font-size: 2.13rem;
+      padding-top: 17.44px;
+      font-size: 34.08px;
       .bg-font {
-        line-height: 1.58rem;
-        letter-spacing: 1.7rem;
+        line-height: 25.28px;
+        letter-spacing: 27.2px;
       }
       .label {
-        line-height: 1.98rem;
+        line-height: 31.68px;
       }
     }
 
@@ -332,41 +332,41 @@ export default {
       height: 540px;
 
       .slogin {
-        margin-top: 1rem;
-        font-size: 1.03rem;
-        line-height: 0.95rem;
-        letter-spacing: 0.82rem;
+        margin-top: 16px;
+        font-size: 16.48px;
+        line-height: 15.2px;
+        letter-spacing: 13.12px;
       }
     }
 
     .aboutus-content {
       margin-top: -181.44px;
-      font-size: 0.69rem;
-      line-height: 1.5rem;
+      font-size: 11.04px;
+      line-height: 24px;
 
       & > span:not(:first-child) {
-        margin-top: 1.5rem;
+        margin-top: 24px;
       }
     }
 
     .enterprise-culture-label {
-      margin-top: 5.5rem;
+      margin-top: 88px;
     }
 
     .enterprise-culture-content {
-      margin-top: 3.63rem;
-      font-size: 0.69rem;
-      line-height: 1.5rem;
+      margin-top: 58.08px;
+      font-size: 11.04px;
+      line-height: 24px;
 
       & > span:last-child {
-        margin-top: 1.5rem;
+        margin-top: 24px;
       }
     }
 
     .footer-address {
       min-width: 1080px;
-      margin-top: 10.19rem;
-      padding: 2.06rem 0 0.83rem;
+      margin-top: 163.04px;
+      padding: 32.96px 0 13.28px;
 
       .contact_way {
         height: 305.64px;
@@ -385,23 +385,23 @@ export default {
             display: flex;
             justify-content: space-between;
             .contactus_label {
-              padding-top: 0.83rem;
+              padding-top: 13.28px;
               position: relative;
 
               .contactus_label_bg {
-                font-size: 0.94rem;
-                line-height: 0.7rem;
-                letter-spacing: 0.75rem;
+                font-size: 15.04px;
+                line-height: 11.2px;
+                letter-spacing: 12px;
               }
 
               .contactus_label_font {
-                font-size: 1.19rem;
-                line-height: 1.13rem;
+                font-size: 19.04px;
+                line-height: 18.08px;
               }
             }
             .brand_image {
-              width: 2.94rem;
-              height: 1.25rem;
+              width: 47.04px;
+              height: 20px;
             }
           }
 
@@ -410,13 +410,13 @@ export default {
             width: 100%;
 
             .scan-wrapper {
-              font-size: 0.63rem;
+              font-size: 10.08px;
               .we_chat {
-                margin-left: 2.8rem;
+                margin-left: 44.8px;
               }
 
               .scan_desc {
-                margin-top: 0.31rem;
+                margin-top: 4.96px;
               }
 
               .scan_image {
@@ -427,9 +427,9 @@ export default {
 
             .address_email {
               margin-top: 25.92px;
-              font-size: 0.64rem;
-              letter-spacing: 0.08rem;
-              line-height: 0.75rem;
+              font-size: 10.24px;
+              letter-spacing: 1.28px;
+              line-height: 12px;
 
               .yuan_email {
                 margin-top: 6.48px;
@@ -444,9 +444,9 @@ export default {
               }
 
               .contact_icon {
-                width: 0.94rem;
-                height: 0.94rem;
-                margin-right: 0.5rem;
+                width: 15.04px;
+                height: 15.04px;
+                margin-right: 8px;
               }
             }
 

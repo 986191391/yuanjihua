@@ -244,7 +244,7 @@ export default {
             height: 6.5vw;
           }
           .scan_code_title {
-            margin-top: 0.33rem;
+            margin-top: 5.28px;
             color: #ffffff;
             font-size: 1.2vw;
           }
@@ -396,76 +396,76 @@ export default {
   .web-container {
     .banner {
       .image_2 {
-        width: 14rem;
-        height: 5rem;
+        width: 224px;
+        height: 80px;
       }
 
       .text_4 {
-        margin-top: 0.7rem;
-        font-size: 3rem;
+        margin-top: 11.2px;
+        font-size: 48px;
       }
     }
     .story_list {
-      height: 30.81rem;
-      margin-top: 3.53rem;
-      padding: 0 3.47rem;
+      height: 492.96px;
+      margin-top: 56.48px;
+      padding: 0 55.52px;
       .story_label {
         height: auto;
-        border-radius: 0.16rem;
-        width: 5.16rem;
-        padding: 0.41rem 0 0.42rem;
+        border-radius: 2.56px;
+        width: 82.56px;
+        padding: 6.56px 0 6.72px;
 
         .text_5 {
-          line-height: 0.64rem;
+          line-height: 10.24px;
         }
       }
       .story {
-        height: 15.4375rem;
-        padding: 2.56rem 1.68rem 2.96rem;
-        font-size: 0.69rem;
+        height: 247px;
+        padding: 40.96px 26.88px 47.36px;
+        font-size: 11.04px;
 
         &.left-active {
-          height: 30.875rem;
-          margin-bottom: -15.4375rem;
+          height: 494px;
+          margin-bottom: -247px;
         }
 
         &.right-active {
-          height: 30.875rem;
-          margin-bottom: -15.4375rem;
+          height: 494px;
+          margin-bottom: -247px;
         }
 
         &.active {
-          height: 30.86rem;
-          margin-bottom: -15.4375rem;
+          height: 493.76px;
+          margin-bottom: -247px;
         }
         .story_desc {
           text-align: left;
-          margin-top: 0.73rem;
+          margin-top: 11.68px;
           color: #ffffff;
-          line-height: 1.38rem;
-          font-size: 0.63rem;
-          width: 14.38rem;
+          line-height: 22.08px;
+          font-size: 10.08px;
+          width: 230.08px;
         }
       }
       .story_3 {
-        padding: 2.61rem 1.66rem 2.94rem;
-        height: 15.4375rem;
-        font-size: 0.69rem;
+        padding: 41.76px 26.56px 47.04px;
+        height: 247px;
+        font-size: 11.04px;
         &.active {
-          height: 30.81rem;
-          margin-top: -15.4375rem;
+          height: 492.96px;
+          margin-top: -247px;
         }
       }
       .story_detail {
-        height: 21rem;
+        height: 336px;
         flex: 1;
-        font-size: 0.63rem;
-        margin-top: 1.5rem;
+        font-size: 10.08px;
+        margin-top: 24px;
 
         .desc {
           width: 60%;
           height: 100%;
-          line-height: 1.38rem;
+          line-height: 22.08px;
           overflow: scroll;
 
           & > span {
@@ -477,12 +477,12 @@ export default {
 
         .scan_code_wrapper {
           .scan_image {
-            width: 4.16rem;
-            height: 4.13rem;
+            width: 66.56px;
+            height: 66.08px;
           }
           .scan_code_title {
-            margin-top: 0.33rem;
-            font-size: 0.63rem;
+            margin-top: 5.28px;
+            font-size: 10.08px;
           }
         }
       }
@@ -492,13 +492,13 @@ export default {
         position: absolute;
         right: 20px;
         top: 20px;
-        font-size: 1.5rem;
+        font-size: 24px;
       }
     }
     .section-more-icon {
-      margin-top: 1rem;
-      width: 1.91rem;
-      height: 0.36rem;
+      margin-top: 16px;
+      width: 30.56px;
+      height: 5.76px;
     }
   }
 }

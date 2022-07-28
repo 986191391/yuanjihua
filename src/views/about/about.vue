@@ -35,6 +35,7 @@ export default {
 
     .pc-about-page {
       display: flex;
+      font-size: 16px;
     }
   }
 }
