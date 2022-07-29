@@ -274,13 +274,15 @@ export default {
       }
 
       .story_label {
-        width: 8.5vw;
+        // width: 8.5vw;
+        width:fit-content;
         height: 2.3vw;
         background-color: #ffffff;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        padding: 8px 18px;
+        border-radius: 6px;
         .text_5 {
           color: #000000;
           font-family: PingFang SC;
@@ -412,9 +414,8 @@ export default {
       .story_label {
         height: auto;
         border-radius: 2.56px;
-        width: 82.56px;
-        padding: 6.56px 0 6.72px;
-
+        // width: 82.56px;
+        width:fit-content;
         .text_5 {
           line-height: 10.24px;
         }
