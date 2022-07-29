@@ -2,6 +2,7 @@
   <div id="app">
     <YuanNav />
     <router-view key="key"/>
+    <!-- <router-view v-if="isRouterAlive" :key="key"/> -->
   </div>
 </template>
 
@@ -15,6 +16,21 @@ export default {
       return this.$route.fullPath
     }
   }
+  // setup () {
+  //   // 局部组件刷新
+  //   const isRouterAlive = ref(true)
+  //   const reload = () => {
+  //     isRouterAlive.value = false
+  //     nextTick(() => {
+  //       isRouterAlive.value = true
+  //     })
+  //   }
+  //   provide('reload', reload)
+  //   return {
+  //     isRouterAlive
+  //   }
+  // }
+
 }
 </script>
 
