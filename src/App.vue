@@ -1,31 +1,20 @@
 <template>
   <div id="app">
     <YuanNav />
-    <router-view v-if="isRouterAlive"/>
+    <router-view key="key"/>
   </div>
 </template>
 
 <script>
 import YuanNav from './components/YuanNav.vue'
-import { ref, nextTick, provide } from 'vue'
+// import { ref, nextTick, provide } from 'vue'
 export default {
   components: { YuanNav },
-
-  setup () {
-    // 局部组件刷新
-    const isRouterAlive = ref(true)
-    const reload = () => {
-      isRouterAlive.value = false
-      nextTick(() => {
-        isRouterAlive.value = true
-      })
-    }
-    provide('reload', reload)
-    return {
-      isRouterAlive
+  computed: {
+    key () {
+      return this.$route.fullPath
     }
   }
-
 }
 </script>
 

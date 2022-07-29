@@ -8,15 +8,8 @@
 <script>
 import WebHomePage from './webHomePage.vue'
 import PcHomePage from './pcHomePage.vue'
-import { inject } from 'vue'
 export default {
-  components: { WebHomePage, PcHomePage },
-  setup () {
-    const ceshi = inject('reload')
-    return {
-      ceshi
-    }
-  }
+  components: { WebHomePage, PcHomePage }
 }
 </script>
 
