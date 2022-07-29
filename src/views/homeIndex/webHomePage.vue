@@ -280,7 +280,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        border-radius: 0.16rem;
         .text_5 {
           color: #000000;
           font-family: PingFang SC;
