@@ -1,16 +1,14 @@
 <template>
-  <div class="flex-col plan-page">
-    <WebPlan />
-    <MobilePlan />
+  <div class="flex-col legends-page">
+    <WebLegends />
   </div>
 </template>
 
 <script>
-import WebPlan from './webPlan'
-import MobilePlan from './mobilePlan.vue'
+import WebLegends from './webLegends'
 
 export default {
-  components: { WebPlan, MobilePlan },
+  components: { WebLegends },
   data () {
     return {
     }
@@ -20,24 +18,24 @@ export default {
 
 <style scoped lang="scss">
   @media screen and (max-width: 600px) {
-    .plan-page {
-      .web-plan-page {
+    .legends-page {
+      .web-legends-page {
         display: none;
       }
 
-      .mobile-plan-page {
+      .mobile-legends-page {
         display: flex;
       }
     }
   }
 
   @media screen and (min-width: 600px) {
-    .plan-page {
-      .web-plan-page {
+    .legends-page {
+      .web-legends-page {
         display: flex;
       }
 
-      .mobile-plan-page {
+      .mobile-legends-page {
         display: none;
       }
     }

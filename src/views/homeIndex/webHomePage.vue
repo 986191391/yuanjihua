@@ -394,113 +394,102 @@ export default {
     }
 }
 
-@media screen and (max-width: 1080px) {
-  .web-container {
-    .banner {
-      .image_2 {
-        width: 224px;
-        height: 80px;
-      }
+// @media screen and (max-width: 1080px) {
+//   .web-container {
+//     .story_list {
+//       height: 492.96px;
+//       margin-top: 56.48px;
+//       padding: 0 55.52px;
+//       .story_label {
+//         height: auto;
+//         border-radius: 2.56px;
+//         // width: 82.56px;
+//         width:fit-content;
+//         .text_5 {
+//           line-height: 10.24px;
+//         }
+//       }
+//       .story {
+//         height: 247px;
+//         padding: 40.96px 26.88px 47.36px;
+//         font-size: 11.04px;
 
-      .text_4 {
-        margin-top: 11.2px;
-        font-size: 48px;
-      }
-    }
-    .story_list {
-      height: 492.96px;
-      margin-top: 56.48px;
-      padding: 0 55.52px;
-      .story_label {
-        height: auto;
-        border-radius: 2.56px;
-        // width: 82.56px;
-        width:fit-content;
-        .text_5 {
-          line-height: 10.24px;
-        }
-      }
-      .story {
-        height: 247px;
-        padding: 40.96px 26.88px 47.36px;
-        font-size: 11.04px;
+//         &.left-active {
+//           height: 494px;
+//           margin-bottom: -247px;
+//         }
 
-        &.left-active {
-          height: 494px;
-          margin-bottom: -247px;
-        }
+//         &.right-active {
+//           height: 494px;
+//           margin-bottom: -247px;
+//         }
 
-        &.right-active {
-          height: 494px;
-          margin-bottom: -247px;
-        }
+//         &.active {
+//           height: 493.76px;
+//           margin-bottom: -247px;
+//         }
+//         .story_desc {
+//           text-align: left;
+//           margin-top: 11.68px;
+//           color: #ffffff;
+//           line-height: 22.08px;
+//           font-size: 10.08px;
+//           width: 230.08px;
+//         }
+//       }
+//       .story_3 {
+//         padding: 41.76px 26.56px 47.04px;
+//         height: 247px;
+//         font-size: 11.04px;
+//         &.active {
+//           height: 492.96px;
+//           margin-top: -247px;
+//         }
+//       }
+//       .story_detail {
+//         height: 336px;
+//         flex: 1;
+//         font-size: 10.08px;
+//         margin-top: 24px;
 
-        &.active {
-          height: 493.76px;
-          margin-bottom: -247px;
-        }
-        .story_desc {
-          text-align: left;
-          margin-top: 11.68px;
-          color: #ffffff;
-          line-height: 22.08px;
-          font-size: 10.08px;
-          width: 230.08px;
-        }
-      }
-      .story_3 {
-        padding: 41.76px 26.56px 47.04px;
-        height: 247px;
-        font-size: 11.04px;
-        &.active {
-          height: 492.96px;
-          margin-top: -247px;
-        }
-      }
-      .story_detail {
-        height: 336px;
-        flex: 1;
-        font-size: 10.08px;
-        margin-top: 24px;
+//         .desc {
+//           width: 60%;
+//           height: 100%;
+//           line-height: 22.08px;
+//           overflow: scroll;
 
-        .desc {
-          width: 60%;
-          height: 100%;
-          line-height: 22.08px;
-          overflow: scroll;
+//           & > span {
+//             &:not(:first-child) {
+//               margin-top: 8px;
+//             }
+//           }
+//         }
 
-          & > span {
-            &:not(:first-child) {
-              margin-top: 8px;
-            }
-          }
-        }
-
-        .scan_code_wrapper {
-          .scan_image {
-            width: 66.56px;
-            height: 66.08px;
-          }
-          .scan_code_title {
-            margin-top: 5.28px;
-            font-size: 10.08px;
-          }
-        }
-      }
-      .cloes_active_icon {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        font-size: 24px;
-      }
-    }
-    .section-more-icon {
-      margin-top: 16px;
-      width: 30.56px;
-      height: 5.76px;
-    }
-  }
-}
+//         .scan_code_wrapper {
+//           .scan_image {
+//             width: 66.56px;
+//             height: 66.08px;
+//           }
+//           .scan_code_title {
+//             margin-top: 5.28px;
+//             font-size: 10.08px;
+//           }
+//         }
+//       }
+//       .cloes_active_icon {
+//         width: 30px;
+//         height: 30px;
+//         position: absolute;
+//         right: 20px;
+//         top: 20px;
+//         font-size: 24px;
+//       }
+//     }
+//     .section-more-icon {
+//       margin-top: 16px;
+//       width: 30.56px;
+//       height: 5.76px;
+//     }
+//   }
+// }
 </style>

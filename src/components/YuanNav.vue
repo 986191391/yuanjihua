@@ -26,8 +26,8 @@
         <router-link class="nav-list-item" to="/">首页</router-link>
         <router-link class="nav-list-item" to="/about">关于我们</router-link>
         <router-link class="nav-list-item" to="/plan">规划图</router-link>
-        <a class="nav-list-item" @click="navClick">图例展示</a>
-        <a class="nav-list-item" @click="navClick">登录</a>
+        <a class="nav-list-item" @click="mobileNavClick">图例展示</a>
+        <a class="nav-list-item" @click="mobileNavClick">登录</a>
       </div>
     </div>
   </div>
@@ -58,19 +58,20 @@ export default {
           title: '规划图',
           path: '/plan',
           active: 2
+        },
+        {
+          title: '图例展示',
+          path: '/legends',
+          active: 3
         }
-        // {
-        //   title: '图例展示',
-        //   path: '/',
-        //   active: 3
-        // }
       ],
-      translateX: [3.3, 8.8, 14.5, 20.2],
-      pcNavTitle: ['元计划', '关于我们', '规划图'],
+      translateX: [3.3, 8.8, 15, 21.1],
+      pcNavTitle: ['元计划', '关于我们', '规划图', '图例展示'],
       navRelate: {
         homeIndex: 0,
         about: 1,
-        plan: 2
+        plan: 2,
+        legends: 3
       },
       isNavModalShow: false,
       scrollThrottle: this.debounce(this.handleScroll, 10)
@@ -83,14 +84,6 @@ export default {
     if (screen.width > 600) window.removeEventListener('scroll', this.scrollThrottle) // 销毁滚动事件
   },
   methods: {
-    navClick () {
-      this.isNavModalShow = false
-      this.$message({
-        message: '即将开放!',
-        duration: 1000,
-        customClass: 'mobile-message'
-      })
-    },
     handleScroll () {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       this.isScroll = scrollTop > 0
@@ -109,6 +102,14 @@ export default {
       }
     },
     onPcNavClick () {
+    },
+    mobileNavClick () {
+      this.isNavModalShow = false
+      this.$message({
+        message: '即将开放!',
+        duration: 1000,
+        customClass: 'mobile-message'
+      })
     }
   },
   watch: {

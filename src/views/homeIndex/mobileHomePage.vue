@@ -1,6 +1,6 @@
 <template>
-  <div class="pc-container">
-    <div class="flex-col pc-homeindex">
+  <div class="mobile-container">
+    <div class="flex-col mobile-homeindex">
       <video
         v-if="!isAndroid"
         ref="video"
@@ -9,7 +9,7 @@
         loop="loop"
         autoplay="autoplay"
         src="https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.mp4"
-        class="flex-col pc-banner"
+        class="flex-col mobile-banner"
         id="video-home"
         playsinline
         webkit-playsinline="true"
@@ -17,7 +17,7 @@
         data-object-fit=""
         preload="auto"
       />
-      <div v-else class="flex-col pc-banner bg-video" />
+      <div v-else class="flex-col mobile-banner bg-video" />
       <Swiper class="custom-swiper" />
     </div>
     <YuanFooter />
@@ -49,13 +49,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.pc-container {
+.mobile-container {
     height: 100%;
     display: flex;
     flex-direction: column;
 
-    .pc-homeindex {
-      .pc-banner {
+    .mobile-homeindex {
+      .mobile-banner {
         height: 560px;
         // padding: 108.96px 0 282.08px;
         // background-image: url("https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/T-shirt_mobile.webp");

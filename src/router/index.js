@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeIndex from '../views/homeIndex/homeIndex.vue'
 import About from '../views/about/about.vue'
 import Plan from '../views/plan/plan.vue'
+import Legends from '../views/legends/legends.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/plan',
     name: 'plan',
     component: Plan
+  },
+  {
+    path: '/legends',
+    name: 'legends',
+    component: Legends
   }
 ]
 

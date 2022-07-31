@@ -312,148 +312,148 @@ export default {
   }
 }
 
-@media screen and (max-width: 1080px) {
-  .web-about-page {
-    min-width: 1080px;
+// @media screen and (max-width: 1080px) {
+//   .web-about-page {
+//     min-width: 1080px;
 
-    .desc-label {
-      padding-top: 17.44px;
-      font-size: 34.08px;
-      .bg-font {
-        line-height: 25.28px;
-        letter-spacing: 27.2px;
-      }
-      .label {
-        line-height: 31.68px;
-      }
-    }
+//     .desc-label {
+//       padding-top: 17.44px;
+//       font-size: 34.08px;
+//       .bg-font {
+//         line-height: 25.28px;
+//         letter-spacing: 27.2px;
+//       }
+//       .label {
+//         line-height: 31.68px;
+//       }
+//     }
 
-    .about-banner {
-      height: 540px;
+//     .about-banner {
+//       height: 540px;
 
-      .slogin {
-        margin-top: 16px;
-        font-size: 16.48px;
-        line-height: 15.2px;
-        letter-spacing: 13.12px;
-      }
-    }
+//       .slogin {
+//         margin-top: 16px;
+//         font-size: 16.48px;
+//         line-height: 15.2px;
+//         letter-spacing: 13.12px;
+//       }
+//     }
 
-    .aboutus-content {
-      margin-top: -181.44px;
-      font-size: 11.04px;
-      line-height: 24px;
+//     .aboutus-content {
+//       margin-top: -181.44px;
+//       font-size: 11.04px;
+//       line-height: 24px;
 
-      & > span:not(:first-child) {
-        margin-top: 24px;
-      }
-    }
+//       & > span:not(:first-child) {
+//         margin-top: 24px;
+//       }
+//     }
 
-    .enterprise-culture-label {
-      margin-top: 88px;
-    }
+//     .enterprise-culture-label {
+//       margin-top: 88px;
+//     }
 
-    .enterprise-culture-content {
-      margin-top: 58.08px;
-      font-size: 11.04px;
-      line-height: 24px;
+//     .enterprise-culture-content {
+//       margin-top: 58.08px;
+//       font-size: 11.04px;
+//       line-height: 24px;
 
-      & > span:last-child {
-        margin-top: 24px;
-      }
-    }
+//       & > span:last-child {
+//         margin-top: 24px;
+//       }
+//     }
 
-    .footer-address {
-      min-width: 1080px;
-      margin-top: 163.04px;
-      padding: 32.96px 0 13.28px;
+//     .footer-address {
+//       min-width: 1080px;
+//       margin-top: 163.04px;
+//       padding: 32.96px 0 13.28px;
 
-      .contact_way {
-        height: 305.64px;
+//       .contact_way {
+//         height: 305.64px;
 
-        .address_position {
-          width: 503.28px;
-        }
+//         .address_position {
+//           width: 503.28px;
+//         }
 
-        .contactus {
-          padding: 24.84px 37.152px;
-          width: 452.52px;
+//         .contactus {
+//           padding: 24.84px 37.152px;
+//           width: 452.52px;
 
-          .contactus_header {
-            width: 100%;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            .contactus_label {
-              padding-top: 13.28px;
-              position: relative;
+//           .contactus_header {
+//             width: 100%;
+//             position: relative;
+//             display: flex;
+//             justify-content: space-between;
+//             .contactus_label {
+//               padding-top: 13.28px;
+//               position: relative;
 
-              .contactus_label_bg {
-                font-size: 15.04px;
-                line-height: 11.2px;
-                letter-spacing: 12px;
-              }
+//               .contactus_label_bg {
+//                 font-size: 15.04px;
+//                 line-height: 11.2px;
+//                 letter-spacing: 12px;
+//               }
 
-              .contactus_label_font {
-                font-size: 19.04px;
-                line-height: 18.08px;
-              }
-            }
-            .brand_image {
-              width: 47.04px;
-              height: 20px;
-            }
-          }
+//               .contactus_label_font {
+//                 font-size: 19.04px;
+//                 line-height: 18.08px;
+//               }
+//             }
+//             .brand_image {
+//               width: 47.04px;
+//               height: 20px;
+//             }
+//           }
 
-          .contactus_content {
-            margin-top: 9.72px;
-            width: 100%;
+//           .contactus_content {
+//             margin-top: 9.72px;
+//             width: 100%;
 
-            .scan-wrapper {
-              font-size: 10.08px;
-              .we_chat {
-                margin-left: 44.8px;
-              }
+//             .scan-wrapper {
+//               font-size: 10.08px;
+//               .we_chat {
+//                 margin-left: 44.8px;
+//               }
 
-              .scan_desc {
-                margin-top: 4.96px;
-              }
+//               .scan_desc {
+//                 margin-top: 4.96px;
+//               }
 
-              .scan_image {
-                width: 64.8px;
-                height: 64.8px;
-              }
-            }
+//               .scan_image {
+//                 width: 64.8px;
+//                 height: 64.8px;
+//               }
+//             }
 
-            .address_email {
-              margin-top: 25.92px;
-              font-size: 10.24px;
-              letter-spacing: 1.28px;
-              line-height: 12px;
+//             .address_email {
+//               margin-top: 25.92px;
+//               font-size: 10.24px;
+//               letter-spacing: 1.28px;
+//               line-height: 12px;
 
-              .yuan_email {
-                margin-top: 6.48px;
-              }
+//               .yuan_email {
+//                 margin-top: 6.48px;
+//               }
 
-              .yuan_address_label {
-                margin-top: 20.52px;
-              }
+//               .yuan_address_label {
+//                 margin-top: 20.52px;
+//               }
 
-              .yuan-address {
-                margin-top: 6.48px;
-              }
+//               .yuan-address {
+//                 margin-top: 6.48px;
+//               }
 
-              .contact_icon {
-                width: 15.04px;
-                height: 15.04px;
-                margin-right: 8px;
-              }
-            }
+//               .contact_icon {
+//                 width: 15.04px;
+//                 height: 15.04px;
+//                 margin-right: 8px;
+//               }
+//             }
 
-          }
-        }
-      }
-    }
-  }
-}
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 </style>

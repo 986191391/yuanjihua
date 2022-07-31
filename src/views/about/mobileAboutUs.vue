@@ -1,5 +1,5 @@
 <template>
-<div class="flex-col pc-about-page">
+<div class="flex-col mobile-about-page">
     <!-- <YuanNav navTitle="关于我们" /> -->
     <div class="aboutus-content">
     <div class="bg-wrapper">
@@ -89,7 +89,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.pc-about-page {
+.mobile-about-page {
 padding: 0 0 48px;
 background-color: #000000;
 width: 100%;

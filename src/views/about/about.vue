@@ -1,16 +1,16 @@
 <template>
   <div class="aboutus-page">
     <WebAboutUs />
-    <PcAboutUs />
+    <MobileAboutUs />
   </div>
 </template>
 
 <script>
 import WebAboutUs from './webAboutUs'
-import PcAboutUs from './pcAboutUs.vue'
+import MobileAboutUs from './mobileAboutUs.vue'
 
 export default {
-  components: { WebAboutUs, PcAboutUs },
+  components: { WebAboutUs, MobileAboutUs },
   data () {
     return {}
   }
@@ -33,7 +33,7 @@ export default {
       display: none;
     }
 
-    .pc-about-page {
+    .mobile-about-page {
       display: flex;
       font-size: 16px;
     }
@@ -46,7 +46,7 @@ export default {
       display: flex;
     }
 
-    .pc-about-page {
+    .mobile-about-page {
       display: none;
     }
   }

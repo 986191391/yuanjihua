@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-col pc-plan-page">
+  <div class="flex-col mobile-plan-page">
     <!-- <YuanNav navTitle="流程图" /> -->
     <div class="flex-col plan-content">
       <div class="flex-col plan-banner">
@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.pc-plan-page{
+.mobile-plan-page{
   .plan-content{
     background-image: url('https://yuanjihua-oss.oss-cn-hangzhou.aliyuncs.com/assets/plan/pcbg.png');
     background-size: cover;

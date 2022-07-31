@@ -1,16 +1,16 @@
 <template>
   <div class="flex-col indexPage">
     <WebHomePage />
-    <PcHomePage />
+    <MobileHomePage />
   </div>
 </template>
 
 <script>
 import WebHomePage from './webHomePage.vue'
-import PcHomePage from './pcHomePage.vue'
+import MobileHomePage from './mobileHomePage.vue'
 
 export default {
-  components: { WebHomePage, PcHomePage },
+  components: { WebHomePage, MobileHomePage },
   data () {
     return {
     }
@@ -34,7 +34,7 @@ export default {
         display: none;
       }
 
-      .pc-container {
+      .mobile-container {
         display: flex;
       }
     }
@@ -46,7 +46,7 @@ export default {
         display: flex;
       }
 
-      .pc-container {
+      .mobile-container {
         display: none;
       }
     }
