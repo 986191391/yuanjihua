@@ -10,7 +10,7 @@
         <router-link
           v-for="(item, index) in routeInfo"
           :key="index"
-          :class="`nav-item ${active === item.active && 'nav-active'}`" :to="item.path"
+          :class="`web-nav-item ${active === item.active && 'nav-active'}`" :to="item.path"
         >
           <span class="text">{{ item.title }}</span>
         </router-link>
@@ -26,7 +26,7 @@
         <router-link class="nav-list-item" to="/">首页</router-link>
         <router-link class="nav-list-item" to="/about">关于我们</router-link>
         <router-link class="nav-list-item" to="/plan">规划图</router-link>
-        <a class="nav-list-item" @click="mobileNavClick">图例展示</a>
+        <a class="nav-list-item" @click="onMobileNavClick">图例展示</a>
         <router-link class="nav-list-item" to="/login">登录</router-link>
       </div>
     </div>
@@ -70,7 +70,7 @@ export default {
           active: 4
         }
       ],
-      translateX: [3.3, 8.8, 15, 21.1],
+      translateX: [4, 10.2, 16.5, 22.7],
       pcNavTitle: ['元计划', '关于我们', '规划图', '图例展示', '登录'],
       navRelate: {
         homeIndex: 0,
@@ -108,7 +108,7 @@ export default {
     },
     onPcNavClick () {
     },
-    mobileNavClick () {
+    onMobileNavClick () {
       this.isNavModalShow = false
       this.$message({
         message: '即将开放!',
@@ -163,8 +163,8 @@ export default {
         transition: all 0.3s;
       }
 
-      .nav-item {
-        margin: 0 20.8px;
+      .web-nav-item {
+        width: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
