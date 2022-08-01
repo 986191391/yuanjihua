@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-col legends-page">
+  <div class="flex-col web-legends-page">
     <div class="legends-banner"><!--*--></div>
     <div class="justify-between query-wrapper">
       <div class="flex-row">
@@ -101,7 +101,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.legends-page {
+.web-legends-page {
   background-color: #000000;
   width: 100%;
   height: 100%;
