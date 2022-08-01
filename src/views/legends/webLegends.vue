@@ -110,7 +110,6 @@ export default {
   overflow-x: hidden;
 
   .legends-banner {
-    width: 100vw;
     height: 39.06vw;
     background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62e69336e82d800011e8f321//16592782566199051403.png');
     background-size: 100% 100%;
@@ -160,7 +159,7 @@ export default {
           height: 300px;
           border-radius: 6px 6px 0px 0px;
           background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62e69336e82d800011e8f321//16592782566230174887.png');
-          background-size: 100% 100%;
+          background-size: cover;
           background-repeat: no-repeat;
         }
 

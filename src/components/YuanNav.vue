@@ -26,7 +26,7 @@
         <router-link class="nav-list-item" to="/">首页</router-link>
         <router-link class="nav-list-item" to="/about">关于我们</router-link>
         <router-link class="nav-list-item" to="/plan">规划图</router-link>
-        <a class="nav-list-item" @click="onMobileNavClick">图例展示</a>
+        <router-link class="nav-list-item" to="/legends">图例展示</router-link>
         <router-link class="nav-list-item" to="/login">登录</router-link>
       </div>
     </div>
