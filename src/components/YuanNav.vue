@@ -27,7 +27,7 @@
         <router-link class="nav-list-item" to="/about">关于我们</router-link>
         <router-link class="nav-list-item" to="/plan">规划图</router-link>
         <a class="nav-list-item" @click="mobileNavClick">图例展示</a>
-        <a class="nav-list-item" @click="mobileNavClick">登录</a>
+        <router-link class="nav-list-item" to="/login">登录</router-link>
       </div>
     </div>
   </div>
@@ -63,10 +63,15 @@ export default {
           title: '图例展示',
           path: '/legends',
           active: 3
+        },
+        {
+          title: '登录',
+          path: '/login',
+          active: 4
         }
       ],
       translateX: [3.3, 8.8, 15, 21.1],
-      pcNavTitle: ['元计划', '关于我们', '规划图', '图例展示'],
+      pcNavTitle: ['元计划', '关于我们', '规划图', '图例展示', '登录'],
       navRelate: {
         homeIndex: 0,
         about: 1,

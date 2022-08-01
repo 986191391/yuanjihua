@@ -4,7 +4,7 @@ import HomeIndex from '../views/homeIndex/homeIndex.vue'
 import About from '../views/about/about.vue'
 import Plan from '../views/plan/plan.vue'
 import Legends from '../views/legends/legends.vue'
-
+import login from '../views/login/login.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -27,6 +27,11 @@ const routes = [
     path: '/legends',
     name: 'legends',
     component: Legends
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: login
   }
 ]
 
