@@ -1,14 +1,16 @@
 <template>
   <div class="flex-col legends-page">
     <WebLegends />
+    <MobileLegends />
   </div>
 </template>
 
 <script>
 import WebLegends from './webLegends'
+import MobileLegends from './mobileLegends'
 
 export default {
-  components: { WebLegends },
+  components: { WebLegends, MobileLegends },
   data () {
     return {
     }

@@ -57,78 +57,77 @@ body, html {
 
  /************************************************************
   ** 全局样式**
-  ** 不能删除否则页面将无法正常显示                                  **
+  ** 不能删除否则页面将无法正常显示**
   ************************************************************/
+html {
+  font-size: 16px;
+}
 
-  html {
-    font-size: 16px;
-  }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', 'Microsoft Yahei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-      'Droid Sans', 'Helvetica Neue', 'Microsoft Yahei', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+* {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
 
-  * {
-    box-sizing: border-box;
-    flex-shrink: 0;
-  }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 
-  .flex-row {
-    display: flex;
-    flex-direction: row;
-  }
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
 
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-  }
+.justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
 
-  .justify-start {
-    display: flex;
-    justify-content: flex-start;
-  }
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
 
-  .justify-center {
-    display: flex;
-    justify-content: center;
-  }
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  .justify-end {
-    display: flex;
-    justify-content: flex-end;
-  }
+.justify-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-  .justify-evenly {
-    display: flex;
-    justify-content: space-evenly;
-  }
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
 
-  .justify-around {
-    display: flex;
-    justify-content: space-around;
-  }
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .justify-between {
-    display: flex;
-    justify-content: space-between;
-  }
+.items-start {
+  display: flex;
+  align-items: flex-start;
+}
 
-  .items-start {
-    display: flex;
-    align-items: flex-start;
-  }
+.items-center {
+  display: flex;
+  align-items: center;
+}
 
-  .items-center {
-    display: flex;
-    align-items: center;
-  }
-
-  .items-end {
-    display: flex;
-    align-items: flex-end;
-  }
+.items-end {
+  display: flex;
+  align-items: flex-end;
+}
 </style>

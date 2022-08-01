@@ -1,41 +1,32 @@
 <template>
-  <div class="flex-col legends-page">
+  <div class="flex-col web-legends-page">
     <div class="legends-banner"><!--*--></div>
     <div class="justify-between query-wrapper">
       <div class="flex-row">
-        <div class="flex-row section_4 view">
-          <span class="text">版权品</span>
-          <img
-            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62e69336e82d800011e8f321//16592782566314461043.png"
-            class="image"
-          />
-        </div>
-        <div class="flex-row section_4">
-          <span class="text">元计划</span>
-          <img
-            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62e69336e82d800011e8f321//16592782566314461043.png"
-            class="image"
-          />
-        </div>
-        <div class="flex-row section_4">
-          <span class="text">元计划·南</span>
-          <img
-            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62e69336e82d800011e8f321//16592782566314461043.png"
-            class="image"
-          />
-        </div>
-      </div>
-      <div class="flex-row section_5">
-        <span class="text_4">价格从高到低</span>
-        <img
-          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62e69336e82d800011e8f321//16592782566314461043.png"
-          class="image image_4"
+        <YuanSelect :selectOptions="marketOptions" :value="marketType" placeholder="市场类型" />
+        <YuanSelect
+          :selectOptions="themeOptions"
+          :value="themeClassify"
+          class="theme-select"
+          placeholder="主题分类"
+        />
+        <YuanSelect
+          :selectOptions="moduleOptions"
+          :value="moduleClassify"
+          class="module-select"
+          placeholder="模块分类"
         />
       </div>
+      <YuanSelect
+        :selectOptions="sortOptions"
+        :value="sortMethods"
+        class="sort-select"
+        placeholder="排序方式"
+      />
     </div>
     <div class="flex-col grid-container">
       <div class="grid-main">
-        <div v-for="item in 5" :key="item" class="flex-col grid-item">
+        <div v-for="item in 21" :key="item" class="flex-col grid-item">
           <div class="flex-col items-start item-img">
             <div class="flex-col copyright-icon">版</div>
           </div>
@@ -63,78 +54,89 @@
         </div>
       </div>
     </div>
+    <YuanFooter />
   </div>
 </template>
 
 <script>
+import YuanFooter from '../../components/YuanFooter.vue'
+import YuanSelect from '../../components/YuanSelect.vue'
 export default {
-  components: {},
+  components: { YuanFooter, YuanSelect },
   data () {
-    return {}
+    return {
+      marketOptions: [{
+        value: '版权品',
+        label: '版权品'
+      }],
+      themeOptions: [{
+        value: '元计划',
+        label: '元计划'
+      }],
+      moduleOptions: [{
+        value: '元计划·南',
+        label: '元计划·南'
+      }, {
+        value: '元计划·北',
+        label: '元计划·北'
+      }],
+      sortOptions: [{
+        value: '价格从高到低',
+        label: '价格从高到低'
+      }, {
+        value: '价格从低到高',
+        label: '价格从低到高'
+      }, {
+        value: '按照时间排序',
+        label: '按照时间排序'
+      }],
+      marketType: '',
+      themeClassify: '',
+      moduleClassify: '',
+      sortMethods: ''
+    }
   },
   methods: {}
 }
 </script>
 
 <style scoped lang="scss">
-.legends-page {
+.web-legends-page {
   background-color: #000000;
   width: 100%;
+  height: 100%;
+  min-width: 820px;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 100%;
+
   .legends-banner {
+    width: 100vw;
+    height: 39.06vw;
     background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62e69336e82d800011e8f321//16592782566199051403.png');
     background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    // height: 625px;
-    height: 39.06vw;
+    background-position: center center;
   }
   .query-wrapper {
     padding: 23.5px 159.5px;
     background-color: #000000;
-    .section_5 {
-      padding: 11.5px 22.5px 14px;
-      border-radius: 6px;
-      height: 49px;
-      border: solid 1px #ffffff33;
-      .text_4 {
-        margin-top: 3px;
-        color: #ffffff;
-        font-size: 20px;
-        font-family: PingFang SC;
-        line-height: 18.5px;
-      }
-      .image_4 {
-        margin-left: 8.5px;
-      }
+
+    .copyright-name-select {
+      width: 135px;
+      height: 50px;
     }
-    .section_4 {
+
+    .theme-select, .module-select {
       margin-left: 58px;
-      padding: 11.5px 23px 14px;
-      border-radius: 6px;
-      height: 49px;
-      border: solid 1px #ffffff33;
-      .text {
-        margin-top: 3px;
-        color: #ffffff;
-        font-size: 20px;
-        font-family: PingFang SC;
-        line-height: 18.5px;
-      }
     }
-    .view {
-      margin-left: 0;
-    }
-    .image {
-      margin-left: 8px;
-      flex-shrink: 0;
-      width: 20px;
-      height: 20px;
+
+    .sort-select {
+      width: 195px;
     }
   }
   .grid-container {
-    padding: 0 160px 252px;
+    padding: 0 160px 100px;
 
     .grid-main {
       border-top: 1px solid #ffffff33;
@@ -151,6 +153,8 @@ export default {
         height: 400px;
         background-color: #ffffff;
         border-radius: 6px;
+        cursor: pointer;
+
         .item-img {
           width: 300px;
           height: 300px;
