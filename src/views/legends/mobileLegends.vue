@@ -2,7 +2,7 @@
   <div class="flex-col mobile-legends-page">
     <div class="mobile-legends-banner"><!--*--></div>
     <div class="flex-row filter-wrapper">
-      <div class="flex-row filter-label">
+      <div class="flex-row filter-label" @click="onFilterClick">
         <img
           src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/5ef0815c72734300119dba44/62e69336e82d800011e8f321//16593666915465094398.png"
           class="filter-icon"
@@ -46,6 +46,21 @@
       </div>
     </div>
     <YuanFooter />
+    <el-drawer
+      size="66%"
+      :visible.sync="isDrawerShow"
+      direction="ltr"
+      :before-close="handleClose"
+    >
+      <van-collapse v-model="drawerValues">
+        <van-collapse-item title="模块分类" name="1">内容</van-collapse-item>
+        <van-collapse-item title="特性分类" name="2">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</van-collapse-item>
+      </van-collapse>
+      <div class="drawe-btn-wrapper">
+        <div class="cancel-btn">取消</div>
+        <div class="confirm-btn">确定</div>
+      </div>
+    </el-drawer>
   </div>
 </template>
 
@@ -55,7 +70,16 @@ export default {
   components: { YuanFooter },
   data () {
     return {
-      radio: '1'
+      isDrawerShow: false,
+      drawerValues: ['1']
+    }
+  },
+  methods: {
+    onFilterClick () {
+      this.isDrawerShow = true
+    },
+    handleClose (done) {
+      done()
     }
   }
 }
@@ -183,6 +207,82 @@ export default {
             flex-shrink: 0;
             width: 24px;
             height: 24px;
+          }
+        }
+      }
+    }
+
+    // 修改侧边弹出栏的样式
+    ::v-deep .el-drawer__wrapper .el-drawer__container .el-drawer {
+      padding-top: 44px;
+      background-color: #000;
+
+      & > header {
+        display: none;
+      }
+
+      .el-drawer__body {
+        position: relative;
+        .van-collapse {
+          height: calc(100% - 50px);
+          overflow: scroll;
+          &::after { // 整体底部的border线
+            display: none;
+          }
+          .van-collapse-item {
+            &::after { // item底部的border线
+              display: none;
+            }
+
+            .van-cell {
+              background-color: rgba(98, 103, 148, 0.3);
+              color: #fff;
+              .van-cell__title {
+                text-align: left;
+                position: relative;
+
+                & > span {
+                  padding-left: 15px;
+                  &::before {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    width: 4px;
+                    height: 18px;
+                    background-color: #3478F6;
+                  }
+                }
+              }
+            }
+            .van-collapse-item__wrapper .van-collapse-item__content {
+              background-color: #000;
+            }
+          }
+        }
+
+        .drawe-btn-wrapper {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          display: flex;
+          color: #fff;
+          height: 50px;
+
+          .cancel-btn {
+            width: 40%;
+            background: #1E1F2C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .confirm-btn {
+            flex: 1;
+            background: #3478F6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
